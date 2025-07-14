@@ -16,5 +16,8 @@
       "ignoreFailures": true
     }
   ],
-  "preLaunchTask": "build-all-c-files"
+  "preLaunchTask": "build-all-c-files",
+  "configurations": [
+  
+  ]
 }
