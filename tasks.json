@@ -1,0 +1,24 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "build-all-c-files",
+      "type": "shell",
+      "command": "gcc",
+      "args": [
+        "-g",
+        "*.c",
+        "-o",
+        "outDebug"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": [],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    }
+  ]
+}
