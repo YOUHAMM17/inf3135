@@ -1,0 +1,69 @@
+--2025-08-22 19:24:41--  https://uqam.ca.panopto.com/Panopto/Pages/Sessions/List.aspx
+Resolving uqam.ca.panopto.com (uqam.ca.panopto.com)... 15.157.74.147, 15.157.251.147, 52.60.113.197
+Connecting to uqam.ca.panopto.com (uqam.ca.panopto.com)|15.157.74.147|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 125773 (123K) [text/html]
+Saving to: ‘uqam.ca.panopto.com/Panopto/Pages/Sessions/List.aspx.html’
+
+               uqam.ca.panopt   0%[                                                 ]       0  --.-KB/s               uqam.ca.panopto.com/Panopto/P 100%[================================================>] 122.83K  --.-KB/s    in 0.07s   
+
+Last-modified header missing -- time-stamps turned off.
+2025-08-22 19:24:41 (1.82 MB/s) - ‘uqam.ca.panopto.com/Panopto/Pages/Sessions/List.aspx.html’ saved [125773/125773]
+
+Loading robots.txt; please ignore errors.
+--2025-08-22 19:24:41--  https://uqam.ca.panopto.com/robots.txt
+Reusing existing connection to uqam.ca.panopto.com:443.
+HTTP request sent, awaiting response... 403 Forbidden
+2025-08-22 19:24:41 ERROR 403: Forbidden.
+
+--2025-08-22 19:24:41--  https://uqam.ca.panopto.com/Panopto/ContentCache/636032529261680000/_branding/2077aa04-73bd-4f64-916b-ab3e0103834a/636032529054455597_favicon.ico
+Reusing existing connection to uqam.ca.panopto.com:443.
+HTTP request sent, awaiting response... 302 Found
+Location: https://s-cloudfront.cdn.ca.panopto.com/sessions/_branding/2077aa04-73bd-4f64-916b-ab3e0103834a/636032529054455597_favicon.ico [following]
+--2025-08-22 19:24:41--  https://s-cloudfront.cdn.ca.panopto.com/sessions/_branding/2077aa04-73bd-4f64-916b-ab3e0103834a/636032529054455597_favicon.ico
+Resolving s-cloudfront.cdn.ca.panopto.com (s-cloudfront.cdn.ca.panopto.com)... 3.162.3.62, 3.162.3.118, 3.162.3.7, ...
+Connecting to s-cloudfront.cdn.ca.panopto.com (s-cloudfront.cdn.ca.panopto.com)|3.162.3.62|:443... connected.
+HTTP request sent, awaiting response... 403 Forbidden
+2025-08-22 19:24:41 ERROR 403: Forbidden.
+
+--2025-08-22 19:24:41--  https://uqam.ca.panopto.com/Panopto/Pages/Sessions/%3C@-%20listPageLink%20@%3E
+Connecting to uqam.ca.panopto.com (uqam.ca.panopto.com)|15.157.74.147|:443... connected.
+HTTP request sent, awaiting response... 400 Bad Request
+2025-08-22 19:24:42 ERROR 400: Bad Request.
+
+--2025-08-22 19:24:42--  https://uqam.ca.panopto.com/Panopto/Pages/Sessions/%3C@-%20customerLogoLink%20@%3E
+Reusing existing connection to uqam.ca.panopto.com:443.
+HTTP request sent, awaiting response... 400 Bad Request
+2025-08-22 19:24:42 ERROR 400: Bad Request.
+
+--2025-08-22 19:24:42--  https://uqam.ca.panopto.com/Panopto/Pages/Sessions/%3C@-%20pngUrl%20@%3E
+Reusing existing connection to uqam.ca.panopto.com:443.
+HTTP request sent, awaiting response... 400 Bad Request
+2025-08-22 19:24:42 ERROR 400: Bad Request.
+
+--2025-08-22 19:24:42--  https://uqam.ca.panopto.com/Panopto/Pages/Sessions/%3C@-%20cobrandLink%20@%3E
+Reusing existing connection to uqam.ca.panopto.com:443.
+HTTP request sent, awaiting response... 400 Bad Request
+2025-08-22 19:24:42 ERROR 400: Bad Request.
+
+--2025-08-22 19:24:42--  https://uqam.ca.panopto.com/Panopto/ScriptResource.axd?d=1gvto_FukFfGx6mRxzEfpZm_uP4FA9Z-xE9DK299V77m534oaqIs7H_QN_kIhvwSy8WcdgFoL5RvXzOtnDQSmBhaJS4VndjKMBA0cNMKb9q9ysSeNLI0vif5MdssFlfTUSMozgeJTzuXqET1x14Pjg2&t=fffffffffb0690c3
+Reusing existing connection to uqam.ca.panopto.com:443.
+HTTP request sent, awaiting response... 200 OK
+Length: 544188 (531K) [application/x-javascript]
+Saving to: ‘uqam.ca.panopto.com/Panopto/ScriptResource.axd?d=1gvto_FukFfGx6mRxzEfpZm_uP4FA9Z-xE9DK299V77m534oaqIs7H_QN_kIhvwSy8WcdgFoL5RvXzOtnDQSmBhaJS4VndjKMBA0cNMKb9q9ysSeNLI0vif5MdssFlfTUSMozgeJTzuXqET1x14Pjg2&t=fffffffffb0690c3’
+
+               uqam.ca.panopt   0%[                                                 ]       0  --.-KB/s               uqam.ca.panopto.com/Panopto/S 100%[================================================>] 531.43K  --.-KB/s    in 0.1s    
+
+2025-08-22 19:24:42 (5.42 MB/s) - ‘uqam.ca.panopto.com/Panopto/ScriptResource.axd?d=1gvto_FukFfGx6mRxzEfpZm_uP4FA9Z-xE9DK299V77m534oaqIs7H_QN_kIhvwSy8WcdgFoL5RvXzOtnDQSmBhaJS4VndjKMBA0cNMKb9q9ysSeNLI0vif5MdssFlfTUSMozgeJTzuXqET1x14Pjg2&t=fffffffffb0690c3’ saved [544188/544188]
+
+--2025-08-22 19:24:42--  https://uqam.ca.panopto.com/Panopto/Pages/Sessions/ContractUsage.aspx
+Reusing existing connection to uqam.ca.panopto.com:443.
+HTTP request sent, awaiting response... 404 Not Found
+2025-08-22 19:24:42 ERROR 404: Not Found.
+
+FINISHED --2025-08-22 19:24:42--
+Total wall clock time: 0.8s
+Downloaded: 2 files, 654K in 0.2s (3.95 MB/s)
+Converting links in uqam.ca.panopto.com/Panopto/Pages/Sessions/List.aspx.html... 102.
+43-59
+Converted links in 1 files in 0.001 seconds.

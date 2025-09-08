@@ -1,0 +1,522 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!-- MathJax  --><html>
+<head>
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+<!-- Sage Single Cell Server -->
+<script type="text/javascript" src="https://sagecell.sagemath.org/static/jquery.min.js"></script>
+<script type="text/javascript" src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script>
+<script type="text/javascript">
+    $(function () {
+    // Make the div with id 'mycell' a Sage cell
+    sagecell.makeSagecell({inputLocation:  '#mycell',
+                           template:       sagecell.templates.minimal,
+                           evalButtonText: 'Activate'});
+    // Make *any* div with class 'compute' a Sage cell
+    sagecell.makeSagecell({inputLocation: 'div.compute',
+                           evalButtonText: 'Evaluate'});
+    });
+</script>
+
+
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Combinatoire - Homepage of Alexandre Blondin Massé</title>
+<link rel="stylesheet" type="text/css" media="screen" href="../css/screen.css">
+<meta name="author" content="Alexandre Blondin Massé">
+
+
+</head>
+<body>
+
+<div id="maincontainer">
+
+<div id="topsection"></div>
+
+<div id="menu">
+<ul id="navigation">
+<li><a href="https://ablondin.uqam.ca/index">Accueil</a></li>
+<li><a href="https://ablondin.uqam.ca/posts/fr/blogue">Blogue</a></li>
+<li>Recherche
+  <ul>
+    <li><a href="publications.html">Publications</a></li>
+    <li><a href="etudiants.html">Étudiants</a></li>
+    <li><a href="combinatoire.html">Combinatoire</a></li>
+    <li><a href="dictionnaires.html">Dictionnaires</a></li>
+  </ul>
+</li>
+<li>Enseignement
+  <ul>
+    <li><a href="inf1070.html">INF1070 Utilisation et administration des systèmes informatiques</a></li>
+    <li><a href="inf1130.html">INF1130 Mathématiques pour informaticiens</a></li>
+    <li><a href="inf3135.html">INF3135 Construction et maintenance de logiciels</a></li>
+    <li><a href="inf5071.html">INF5071 Infographie</a></li>
+    <li><a href="inf6120.html">INF6120 Programmation fonctionnelle et logique</a></li>
+    <li><a href="inf7341.html">INF7341 Structures de données</a></li>
+    <li><a href="inf7440.html">INF7440 Conception et analyse d'algorithmes</a></li>
+    <li><a href="inf889b.html">INF889B Algorithmes d'optimisation combinatoire</a></li>
+    <li><a href="mat1060.html">MAT1060 Mathématiques algorithmiques</a></li>
+    <li><a href="https://ablondin.uqam.ca/es/8mqg210">8MQG210 Modelado de sistemas aleatorios</a></li>
+  </ul>
+</li>
+<li>Logiciels
+  <ul>
+    <li><a href="sage.html">Sage</a></li>
+  </ul>
+</li>
+</ul>
+
+</div>
+
+<div id="contentwrapper">
+
+<div id="contentcolumn">
+
+<div class="outertube">
+<div id="rightcolumn">
+<div class="innertube">
+<div id="photo">
+</div>
+<h2>Coordonnées</h2>
+<p>
+Département d'informatique<br>
+Université du Québec à Montréal<br>
+CP 8888, Succ. Centre-ville<br>
+Montréal (Québec) H3C 3P8<br>
+Tél: 514-987-3000, #5516<br>
+Bureau: PK-4525<br>
+Courriel: blondin_masse[point]alexandre<br>
+[arobase]uqam[point]ca<br>
+</p>
+<h2>À propos</h2>
+<p>
+J'ai complété mon doctorat en mathématiques-informatique sous la supervision des professeurs <a href="http://lacim.uqam.ca/~brlek/">Srecko Brlek</a>, de l'Université du Québec à Montréal, au Canada, et de <a href="http://www.lama.univ-savoie.fr/~vuillon/">Laurent Vuillon</a>, de l'Université de Savoie, en France.
+</p>
+<p>
+Depuis le 1er août 2014, je suis professeur adjoint à l'Université du Québec à Montréal, au Canada.
+</p>
+<p>
+</p>
+<h2>Liens utiles</h2>
+<ul>
+  <li>Mon profil sur <a href="http://scholar.google.fr/citations?user=v8C9a9QAAAAJ&amp;hl=fr&amp;oi=ao">Google Scholar</a>
+</li>
+  <li>Mes dépôts <a href="https://gitlab.com/ablondin">GitLab</a>
+</li>
+  <li>Mes dépôts <a href="https://bitbucket.org/ablondin">Bitbucket</a>
+</li>
+  <li>Mes dépôts <a href="https://github.com/ablondin">Github</a>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+
+<h1 class="title">Combinatoire</h1>
+<span class="langlink en"><a href="https://ablondin.uqam.ca/en/combinatorics.html">[english]</a></span>
+<div class="document" id="combinatoire">
+
+
+<p>Les suites symboliques (ou mots) ont de nombreuses applications autant dans le
+domaine de la compression de données qu'en géométrie discrète, en passant par
+la théorie des nombres et la physique. Le mot infini le plus célèbre est
+probablement le mot de Fibonacci</p>
+<div class="formula">
+<b>f</b> = <span class="limits"><sup class="limit"> </sup><span class="limit">lim</span><sub class="limit"><i>n</i> → ∞</sub></span><i>f</i><sub><i>n</i></sub> = <i>abaababaabaababaab</i>⋯
+</div>
+<p>où la suite <span class="formula">{<i>f</i><sub><i>n</i></sub>}</span> est définie par <span class="formula"><i>f</i><sub>0</sub> = <i>b</i></span>, <span class="formula"><i>f</i><sub>1</sub> = <i>a</i></span> et <span class="formula"><i>f</i><sub><i>n</i></sub> = <i>f</i><sub><i>n</i> − 1</sub><i>f</i><sub><i>n</i> − 2</sub></span> pour <span class="formula"><i>n</i> ≥ 2</span>.</p>
+<p>Une autre suite remarquable est le mot de Thue-Morse</p>
+<div class="formula">
+<b>t</b> = <span class="limits"><sup class="limit"> </sup><span class="limit">lim</span><sub class="limit"><i>n</i> → ∞</sub></span><i>t</i><sub><i>n</i></sub> = <i>abbabaabbaababbabaababba</i>⋯
+</div>
+<p>où la suite <span class="formula">{<i>t</i><sub><i>n</i></sub>}</span> est définie par <span class="formula"><i>t</i><sub>0</sub> = <i>a</i></span> et <span class="formula"><i>t</i><sub><i>n</i> + 1</sub> = <i>t</i><sub><i>n</i></sub><span class="overline"><i>t</i><sub><i>n</i></sub></span></span> et l'opérateur <span class="formula"><span class="overline">⋅</span></span> est celui qui échange les
+lettres <span class="formula"><i>a</i></span> et <span class="formula"><i>b</i></span>.</p>
+<p>Considérés hors contexte, ces mots peuvent apparaître purement théoriques, mais
+il existe diverses situations dans lesquels on découvre certaines structures
+encodées par de telles suites symboliques. Par exemple, le chemin suivant cache
+le mot de Fibonacci <span class="formula"><b>f</b></span> décrit plus haut (voir <a class="footnote-reference" href="combinatoire.html#id14" id="id1">[4]</a>). Il possède de
+fortes propriétés symétriques et des motifs fractaux:</p>
+<div class="figure">
+<img alt="Chemin de Fibonacci" src="../images/fibonacci.png" style="width: 300px;">
+</div>
+<p>Mes intérêts de recherche se situent principalement en géométrie discrète.
+J'utilise des outils de la combinatoire des mots pour résoudre différents
+problèmes. En particulier, j'étudie les palindromes et leur généralisation afin
+de mieux comprendre la structure des objects combinatoires et géométriques.</p>
+<div class="section" id="complexite-palindromique">
+<h1>Complexité palindromique</h1>
+<p>Lorsqu'on étudie une suite symbolique donnée, il est particulièrement
+intéressant de se concentrer sur ses facteurs palindromiques, c'est-à-dire les
+mots qui ont la propriété de se lire de la même façon de droite à gauche que de
+gauche à droite. En français, les mots "ressasser" et "radar" sont des
+palindromes. En géométrie discrète, les palindromes correspondent à des objets
+possédant des propriétés symétriques telles qu'être invariant sous une rotation
+d'angle <span class="formula"><i>π</i></span> ou sous différentes réflexions.</p>
+<p>Dans <a class="footnote-reference" href="combinatoire.html#id11" id="id2">[1]</a>, Brlek, Hamel, Nivat et Reutenauer ont introduit la notion de défaut
+palindromique, une statistique sur les mots mesurant leur degré de plénitude
+(ou richesse) en palindromes. Plus précisément, soit <span class="formula"><i>w</i></span> un mot fini. Alors il
+est facile de montrer que <span class="formula"><i>w</i></span> contient au plus <span class="formula">|<i>w</i>| + 1</span> palindromes distincts
+(incluant le palindrome vide <span class="formula"><i>ε</i></span>). Le défaut de <span class="formula"><i>w</i></span> est alors défini
+par</p>
+<div class="formula">
+<i>D</i>(<i>w</i>) = |<i>w</i>| + 1 − |<span class="mathrm"> Pal</span>(<i>w</i>)|
+</div>
+<p>Un mot est appelé <em>plein</em> si <span class="formula"><i>D</i>(<i>w</i>) = 0</span>. Il est bien connu de la communauté que
+les mots sturmiens et episturmiens sont pleins. De plus, le mot de Thue-Morse
+n'est pas plein (on dit alors qu'il est lacunaire) et les positions auxquelles
+on manque les palindromes sont décrites de façon exacte dans <a class="footnote-reference" href="combinatoire.html#id12" id="id3">[2]</a>. Plus
+récemment, nous avons démontré que les codages de rotations, une généralisation
+naturelle des mots sturmiens, sont également pleins <a class="footnote-reference" href="combinatoire.html#id13" id="id4">[3]</a>.</p>
+<p>Un opérateur intéressant qui agit sur les palindromes est le clôture
+palindromique itérée. Soit <span class="formula"><i>w</i></span> un mot fini. On définit la clôture palindromique
+de <span class="formula"><i>w</i></span> comme le palindrome le plus court ayant <span class="formula"><i>w</i></span> comme préfixe. On la note
+par <span class="formula"><i>w</i><sup>( + )</sup></span>. Par exemple</p>
+<div class="formula">
+(<i>abaab</i>)<sup>( + )</sup> = <i>abaab</i>⋅<i>a</i> = <i>abaaba</i>
+</div>
+<p>puisque <span class="formula"><i>baab</i></span> est le plus long palindrome suffixe de <span class="formula"><i>abaab</i></span>. Une autre
+propriété remarquable du mot de Fibonacci est qu'il peut être construit en
+appliquant successivement la clôture palindromique et en ajoutant de façon
+alternée les lettres <span class="formula"><i>a</i></span> et <span class="formula"><i>b</i></span>:</p>
+<p><span class="formula"><span class="environment"><span class="arrayrow">
+<span class="arraycell align-r">
+<b>(a)</b><sup>( + )</sup>
+</span>
+<span class="arraycell align-c">
+ = 
+</span>
+<span class="arraycell align-l">
+<i>a</i>
+</span>
+
+</span>
+<span class="arrayrow">
+<span class="arraycell align-r">
+ 
+</span>
+<span class="arraycell align-c">
+ 
+</span>
+<span class="arraycell align-l">
+ 
+</span>
+
+</span>
+<span class="arrayrow">
+<span class="arraycell align-r">
+(<i>a</i><b>b</b>)<sup>( + )</sup>
+</span>
+<span class="arraycell align-c">
+ = 
+</span>
+<span class="arraycell align-l">
+<i>aba</i>
+</span>
+
+</span>
+<span class="arrayrow">
+<span class="arraycell align-r">
+ 
+</span>
+<span class="arraycell align-c">
+ 
+</span>
+<span class="arraycell align-l">
+ 
+</span>
+
+</span>
+<span class="arrayrow">
+<span class="arraycell align-r">
+(<i>aba</i><b>a</b>)<sup>( + )</sup>
+</span>
+<span class="arraycell align-c">
+ = 
+</span>
+<span class="arraycell align-l">
+<i>abaaba</i>
+</span>
+
+</span>
+<span class="arrayrow">
+<span class="arraycell align-r">
+ 
+</span>
+<span class="arraycell align-c">
+ 
+</span>
+<span class="arraycell align-l">
+ 
+</span>
+
+</span>
+<span class="arrayrow">
+<span class="arraycell align-r">
+(<i>abaaba</i><b>b</b>)<sup>( + )</sup>
+</span>
+<span class="arraycell align-c">
+ = 
+</span>
+<span class="arraycell align-l">
+<i>abaababaaba</i>
+</span>
+
+</span>
+<span class="arrayrow">
+<span class="arraycell align-r">
+ 
+</span>
+<span class="arraycell align-c">
+ 
+</span>
+<span class="arraycell align-l">
+ 
+</span>
+
+</span>
+<span class="arrayrow">
+<span class="arraycell align-r">
+(<i>abaababaaba</i><b>a</b>)<sup>( + )</sup>
+</span>
+<span class="arraycell align-c">
+ = 
+</span>
+<span class="arraycell align-l">
+<i>abaababaabaababaaba</i>
+</span>
+
+</span>
+<span class="arrayrow">
+<span class="arraycell align-r">
+ 
+</span>
+<span class="arraycell align-c">
+ 
+</span>
+<span class="arraycell align-l">
+ 
+</span>
+
+</span>
+<span class="arrayrow">
+<span class="arraycell align-r">
+⋮
+</span>
+
+</span>
+</span></span></p>
+<p>Plusieurs généralisations différentes de la clôture palindromique itérée ont été
+étudiées. Une d'entre elles se concentre sur les pseudopalindromes ou
+<span class="formula"><i>f</i></span>-palindromes, une généralisation classique des palindromes. Soit <span class="formula"><i>f</i></span> une
+involution sur un alphabet quelconque. Alors <span class="formula"><i>w</i></span> est appelé <span class="formula"><i>f</i></span>-palindrome si
+<span class="formula"><i>f</i>(<i>w</i>) = <i>w̃</i></span>, où <span class="formula"><i>⋅̃</i></span> dénote l'image miroir d'un mot (les
+lettres sont écrites dans l'ordre inverse). Par exemple, le mot <span class="formula"><i>ACGT</i></span>, bien
+connu des biologistes, est un <span class="formula"><i>f</i></span>-palindrome, où <span class="formula"><i>f</i></span> est défini par <span class="formula"><i>A</i>↔<i>T</i></span> et <span class="formula"><i>C</i>↔<i>G</i></span>. Une abondante littérature est
+consacrée à la combinatoire des <span class="formula"><i>f</i></span>-palindromes, en particulier en
+bio-informatique. Le lecteur intéressé par le sujet est référé à <a class="footnote-reference" href="combinatoire.html#id15" id="id5">[5]</a> pour plus
+de détails concernant mes travaux sur les <span class="formula"><i>f</i></span>-palindromes et la clôture
+palindromique itérée.</p>
+</div>
+<div class="section" id="pavages">
+<h1>Pavages</h1>
+<p>La combinatoire des mots fournit de précieux outils pour étudier les objets
+discrets tels que les polyominos. En particulier, il permet de caractériser les
+tuiles qui pavent le plan par translation de façon régulière. Beauquier et
+Nivat ont démontré dans <a class="footnote-reference" href="combinatoire.html#id16" id="id6">[6]</a> qu'un polyomino <span class="formula"><i>P</i></span> pave le plan de façon
+périodique s'il admet au moins un mot de contour <span class="formula"><i>w</i></span> (c'est-à-dire un mot sur
+l'alphabet <span class="formula">{<i>a</i>, <span class="overline"><i>a</i></span>, <i>b</i>, <span class="overline"><i>b</i></span>}</span> codant les déplacements
+droite, gauche, haut et bas respectivement) tel que</p>
+<div class="formula">
+<i>w</i> = <i>ABC</i><i><span class="withsymbol"><span class="symbolover">^</span><span class="undersymbol">A</span></span></i><i><span class="withsymbol"><span class="symbolover">^</span><span class="undersymbol">B</span></span></i><i><span class="withsymbol"><span class="symbolover">^</span><span class="undersymbol">C</span></span></i>
+</div>
+<p>où <span class="formula"><i><span class="withsymbol"><span class="symbolover">^</span><span class="undersymbol">⋅</span></span></i></span> dénote le chemin discret parcouru en sens inverse et au
+plus un des mots <span class="formula"><i>A</i></span>, <span class="formula"><i>B</i></span> et <span class="formula"><i>C</i></span> est vide. De tels polyominos sont appelés
+tuiles. Par exemple, les deux polyominos qui suivent sont des tuiles:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="49%">
+<col width="51%">
+</colgroup>
+<tbody valign="top">
+<tr>
+<td>
+<img alt="../images/square.png" class="first last" src="../images/square.png" style="width: 200px;">
+</td>
+<td>
+<img alt="../images/hexagon.png" class="first last" src="../images/hexagon.png" style="width: 200px;">
+</td>
+</tr>
+</tbody>
+</table>
+<p>Le polyomino à gauche est appelé tuile carrée, puisque le mots <span class="formula"><i>C</i></span> est vide.
+D'autre part, le polyomino à droite est appelé tuile hexagonale, puisque chaque
+mot <span class="formula"><i>A</i></span>, <span class="formula"><i>B</i></span> et <span class="formula"><i>C</i></span> sont non vides.</p>
+<p>Au cours des dernières années, j'ai considéré principalement la famille des
+tuiles carrées, plus précisément celles admettant des pavages carrés multiples.
+Par exemple, la tuile de Fibonacci suivante est un <span class="formula">2</span>-carré (ou tuile double
+carrée):</p>
+<div class="figure">
+<img alt="Flocon de Fibonacci" src="../images/fibo2.png" style="width: 400px;">
+</div>
+<p>puisqu'elle admet deux pavages carrés distincts (indiqués par les points rouges
+et bleus). En 2008, il a été conjecturé dans <a class="footnote-reference" href="combinatoire.html#id17" id="id7">[7]</a> qu'il n'existe aucune tuile
+<span class="formula">3</span>-carrée. Nous avons démontré dans <a class="footnote-reference" href="combinatoire.html#id18" id="id8">[8]</a> que cette conjecture est
+effectivement vérifiée. Finalement, nous avons également étudié en détail
+l'énumération des tuiles <span class="formula">2</span>-carrées dans <a class="footnote-reference" href="combinatoire.html#id19" id="id9">[9]</a>. La figure ci-bas illustre les
+100 premières tuiles doubles carrées :</p>
+<div class="figure">
+<img alt="Les 100 premières tuiles doubles carrées" src="../images/double-squares.png" style="width: 500px;">
+</div>
+<p>Il reste plusieurs problèmes ouverts pour tout étudiant souhaitant s'initier à
+la géométrie discrète et la combinatoire des mots (voir par exemple <a class="footnote-reference" href="combinatoire.html#id19" id="id10">[9]</a>).</p>
+</div>
+<div class="section" id="references">
+<h1>Références</h1>
+<table class="docutils footnote" frame="void" id="id11" rules="none">
+<colgroup>
+<col class="label">
+<col>
+</colgroup>
+<tbody valign="top">
+<tr>
+<td class="label"><a class="fn-backref" href="combinatoire.html#id2">[1]</a></td>
+<td>S. Brlek, S. Hamel, M. Nivat et C. Reutenauer, <em>On the palindromic
+complexity of infinite words</em>, International Journal of Foundations Computer
+Science 15: 2 (2004) 293-306.</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="id12" rules="none">
+<colgroup>
+<col class="label">
+<col>
+</colgroup>
+<tbody valign="top">
+<tr>
+<td class="label"><a class="fn-backref" href="combinatoire.html#id3">[2]</a></td>
+<td>A. Blondin Massé, S. Brlek, A. Garon et S. Labbé, <em>Combinatorial
+properties of f-palindromes in the Thue-Morse sequence</em>, Pure Mathematics and
+Applications, vol. 19, no. 2-3, 2008, p. 39-52.</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="id13" rules="none">
+<colgroup>
+<col class="label">
+<col>
+</colgroup>
+<tbody valign="top">
+<tr>
+<td class="label"><a class="fn-backref" href="combinatoire.html#id4">[3]</a></td>
+<td>A. Blondin Massé, S. Brlek, S. Labbé et L. Vuillon, <em>Return words in
+codings of rotations</em>, soumis à Theoretical Computer Science le 6 janvier 2010,
+référence TCS-D-10-00024, accepté, en révision.</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="id14" rules="none">
+<colgroup>
+<col class="label">
+<col>
+</colgroup>
+<tbody valign="top">
+<tr>
+<td class="label"><a class="fn-backref" href="combinatoire.html#id1">[4]</a></td>
+<td>A. Blondin Massé, S. Brlek, A. Garon et S. Labbé, <em>Two infinite families
+of polyominoes that tile the plane by translation in two distinct ways</em>,
+Theoretical Computer Science, sous presse, 2010, doi:
+10.1016/j.tcs.2010.12.034.</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="id15" rules="none">
+<colgroup>
+<col class="label">
+<col>
+</colgroup>
+<tbody valign="top">
+<tr>
+<td class="label"><a class="fn-backref" href="combinatoire.html#id5">[5]</a></td>
+<td>A. Blondin Massé, G. Paquin et L. Vuillon, <em>A Fine and Wilf's theorem
+for pseudoperiods and Justin's formula for generalized pseudostandard words</em>,
+(JM2010) 13 Journée montoises d'informatique théorique (6-8 septembre 2010,
+Amiens, France) 8p.</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="id16" rules="none">
+<colgroup>
+<col class="label">
+<col>
+</colgroup>
+<tbody valign="top">
+<tr>
+<td class="label"><a class="fn-backref" href="combinatoire.html#id6">[6]</a></td>
+<td>D. Beauquier et M. Nivat, <em>On Translating One Polyomino to Tile the
+Plane</em>, Discrete and Computational Geometry 6: 575-592 (1991).</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="id17" rules="none">
+<colgroup>
+<col class="label">
+<col>
+</colgroup>
+<tbody valign="top">
+<tr>
+<td class="label"><a class="fn-backref" href="combinatoire.html#id7">[7]</a></td>
+<td>X. Provençal, <em>Combinatoire des mots, géométrie discrète et pavages</em>. PhD
+thesis, D1715, Université du Québec à Montréal, 2008.</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="id18" rules="none">
+<colgroup>
+<col class="label">
+<col>
+</colgroup>
+<tbody valign="top">
+<tr>
+<td class="label"><a class="fn-backref" href="combinatoire.html#id8">[8]</a></td>
+<td>A. Blondin Massé, S. Brlek, A. Garon et S. Labbé, <em>Every polyomino
+yields at most two square tilings</em>, Lattice Path 2010, Italie, 4-7 juillet
+2010.</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="id19" rules="none">
+<colgroup>
+<col class="label">
+<col>
+</colgroup>
+<tbody valign="top">
+<tr>
+<td class="label">[9]</td>
+<td>
+<em>(<a class="fn-backref" href="combinatoire.html#id9">1</a>, <a class="fn-backref" href="combinatoire.html#id10">2</a>)</em> A. Blondin Massé, A. Garon et S. Labbé, <em>Generation of double square
+tiles</em>, GASCom 2010, Montréal, 2-4 septembre 2010.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+
+<div id="footer">
+<hr class="text-only">
+This site is
+generated by <a href="http://github.com/sylvainhalle/FantasticWindmill">Fantastic Windmill</a>.
+</div>
+
+</div>
+
+<!--
+You are viewing a page using the LOCAL version of the site
+-->
+
+
+</body>
+</html>

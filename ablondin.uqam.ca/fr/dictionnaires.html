@@ -1,0 +1,378 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!-- MathJax  --><html>
+<head>
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+<!-- Sage Single Cell Server -->
+<script type="text/javascript" src="https://sagecell.sagemath.org/static/jquery.min.js"></script>
+<script type="text/javascript" src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script>
+<script type="text/javascript">
+    $(function () {
+    // Make the div with id 'mycell' a Sage cell
+    sagecell.makeSagecell({inputLocation:  '#mycell',
+                           template:       sagecell.templates.minimal,
+                           evalButtonText: 'Activate'});
+    // Make *any* div with class 'compute' a Sage cell
+    sagecell.makeSagecell({inputLocation: 'div.compute',
+                           evalButtonText: 'Evaluate'});
+    });
+</script>
+
+
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Graphes - Homepage of Alexandre Blondin Massé</title>
+<link rel="stylesheet" type="text/css" media="screen" href="../css/screen.css">
+<meta name="author" content="Alexandre Blondin Massé">
+
+
+</head>
+<body>
+
+<div id="maincontainer">
+
+<div id="topsection"></div>
+
+<div id="menu">
+<ul id="navigation">
+<li><a href="https://ablondin.uqam.ca/index">Accueil</a></li>
+<li><a href="https://ablondin.uqam.ca/posts/fr/blogue">Blogue</a></li>
+<li>Recherche
+  <ul>
+    <li><a href="publications.html">Publications</a></li>
+    <li><a href="etudiants.html">Étudiants</a></li>
+    <li><a href="combinatoire.html">Combinatoire</a></li>
+    <li><a href="dictionnaires.html">Dictionnaires</a></li>
+  </ul>
+</li>
+<li>Enseignement
+  <ul>
+    <li><a href="inf1070.html">INF1070 Utilisation et administration des systèmes informatiques</a></li>
+    <li><a href="inf1130.html">INF1130 Mathématiques pour informaticiens</a></li>
+    <li><a href="inf3135.html">INF3135 Construction et maintenance de logiciels</a></li>
+    <li><a href="inf5071.html">INF5071 Infographie</a></li>
+    <li><a href="inf6120.html">INF6120 Programmation fonctionnelle et logique</a></li>
+    <li><a href="inf7341.html">INF7341 Structures de données</a></li>
+    <li><a href="inf7440.html">INF7440 Conception et analyse d'algorithmes</a></li>
+    <li><a href="inf889b.html">INF889B Algorithmes d'optimisation combinatoire</a></li>
+    <li><a href="mat1060.html">MAT1060 Mathématiques algorithmiques</a></li>
+    <li><a href="https://ablondin.uqam.ca/es/8mqg210">8MQG210 Modelado de sistemas aleatorios</a></li>
+  </ul>
+</li>
+<li>Logiciels
+  <ul>
+    <li><a href="sage.html">Sage</a></li>
+  </ul>
+</li>
+</ul>
+
+</div>
+
+<div id="contentwrapper">
+
+<div id="contentcolumn">
+
+<div class="outertube">
+<div id="rightcolumn">
+<div class="innertube">
+<div id="photo">
+</div>
+<h2>Coordonnées</h2>
+<p>
+Département d'informatique<br>
+Université du Québec à Montréal<br>
+CP 8888, Succ. Centre-ville<br>
+Montréal (Québec) H3C 3P8<br>
+Tél: 514-987-3000, #5516<br>
+Bureau: PK-4525<br>
+Courriel: blondin_masse[point]alexandre<br>
+[arobase]uqam[point]ca<br>
+</p>
+<h2>À propos</h2>
+<p>
+J'ai complété mon doctorat en mathématiques-informatique sous la supervision des professeurs <a href="http://lacim.uqam.ca/~brlek/">Srecko Brlek</a>, de l'Université du Québec à Montréal, au Canada, et de <a href="http://www.lama.univ-savoie.fr/~vuillon/">Laurent Vuillon</a>, de l'Université de Savoie, en France.
+</p>
+<p>
+Depuis le 1er août 2014, je suis professeur adjoint à l'Université du Québec à Montréal, au Canada.
+</p>
+<p>
+</p>
+<h2>Liens utiles</h2>
+<ul>
+  <li>Mon profil sur <a href="http://scholar.google.fr/citations?user=v8C9a9QAAAAJ&amp;hl=fr&amp;oi=ao">Google Scholar</a>
+</li>
+  <li>Mes dépôts <a href="https://gitlab.com/ablondin">GitLab</a>
+</li>
+  <li>Mes dépôts <a href="https://bitbucket.org/ablondin">Bitbucket</a>
+</li>
+  <li>Mes dépôts <a href="https://github.com/ablondin">Github</a>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+
+<h1 class="title">Graphes</h1>
+<span class="langlink en"><a href="https://ablondin.uqam.ca/en/dictionaries.html">[english]</a></span>
+<div class="document" id="graphes">
+
+
+<p>Je travaille présentement au sein d'un projet dans lequel nous nous intéressons
+à la structure induite par l'espace définitionnel d'un dictionnaire. Ce travail
+se déroule en collaboration avec Guillaume Chicoisne, Zhe Fu, Philippe
+Galinier, Yassine Gargouri, Stevan Harnad, Mélodie Lapointe, Martin Lavoie,
+Marcos Lopes, Mélanie Lord, Odile Marcotte, Olivier Picard, Fatiha Sadat et
+Philippe Vincent-Lamarre.</p>
+<div class="section" id="dictionnaires">
+<h1>Dictionnaires</h1>
+<p>Nous utilisons une approche basée sur la théorie des graphes pour représenter l'espace définitionnel. Par exemple, considérons le dictionnaire <cite>D</cite> dont les définitions se trouvent dans le tableau 1.</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="20%">
+<col width="32%">
+<col width="18%">
+<col width="30%">
+</colgroup>
+<tbody valign="top">
+<tr>
+<td>Word</td>
+<td>Definition</td>
+<td>Word</td>
+<td>Definition</td>
+</tr>
+<tr>
+<td>apple</td>
+<td>red fruit</td>
+<td>good</td>
+<td>not bad</td>
+</tr>
+<tr>
+<td>bad</td>
+<td>not good</td>
+<td>light</td>
+<td>not dark</td>
+</tr>
+<tr>
+<td>banana</td>
+<td>yellow fruit</td>
+<td>no</td>
+<td>not</td>
+</tr>
+<tr>
+<td>color</td>
+<td>light dark</td>
+<td>not</td>
+<td>no</td>
+</tr>
+<tr>
+<td>dark</td>
+<td>not light</td>
+<td>red</td>
+<td>dark color</td>
+</tr>
+<tr>
+<td>edible</td>
+<td>good</td>
+<td>tomato</td>
+<td>red fruit</td>
+</tr>
+<tr>
+<td>fruit</td>
+<td>edible</td>
+<td>yellow</td>
+<td>light color</td>
+</tr>
+</tbody>
+</table>
+<p><cite>D</cite> peut être représenté par un graphe orienté comme l'illustre la figure
+ci-bas :</p>
+<div class="figure align-center">
+<img alt="A toy dictionary" src="../images/dictionary.gif" style="width: 400px;">
+<p class="caption">Un petit dictionnaire représenté par un graphe orienté</p>
+</div>
+<p>Plus précisément, à chaque mot du dictionnaire correspond un sommet et il
+existe un arc du sommet <cite>u</cite> vers le sommet <cite>v</cite> si le mot <cite>u</cite> se trouve dans la
+définition du mot <cite>v</cite>.</p>
+<p>Tous les mots n'ont pas la même importance ni la même fréquence dans une
+langue. Lorsque nous nous concentrons sur les dictionnaires, nous remarquons
+que certains mots apparaissent dans les définitions mais ce n'est pas toujours
+le cas. Par exemple, les mots <em>apple</em>, <em>banana</em> et <em>tomato</em> de la figure 1
+n'ont aucun successeur. Ils peuvent donc être supprimés puisqu'il est possible
+de les récupérer en inspectant leur définition. Ce processus peut être répété,
+de sorte que les mots <em>fruit</em>, <em>red</em> et <em>yellow</em> sont également supprimés,
+suivi des mots <em>color</em> et <em>edible</em> jusqu'à ce qu'on ne puisse plus retirer
+aucun mot. Le sous-dictionnaire unique obtenu est appelé <strong>noyau d'ancrage</strong>
+(ou simplement <strong>noyau</strong>) du dictionnaire (voir figure ci-bas).</p>
+<div class="figure">
+<img alt="Noyau d'ancrage du dictionnaire jouet" src="../images/gk.gif" style="width: 400px;">
+<p class="caption">Noyau d'ancrage du dictionnaire jouet</p>
+</div>
+<p>Le noyau d'ancrage <cite>K</cite> présente plusieurs caractéristiques notables :</p>
+<ul class="simple">
+<li>Tout mot du dictionnaire complet peut être atteint par définition seulement à
+partir de <cite>K</cite>;</li>
+<li>Tout cycle du dictionnaire appartient au noyau <cite>K</cite>.</li>
+<li>Il est unique à chaque dictionnaire;</li>
+<li>D'un point de vue empirique, les dictionnaires de langue naturelle se
+réduisent à 10% de leur taille originale lorsqu'on calcule <cite>K</cite>.</li>
+</ul>
+<p>Le lecteur curieux est invité à lire une introduction à ces différents concepts
+dans <a class="footnote-reference" href="dictionnaires.html#id5" id="id1">[1]</a>.</p>
+</div>
+<div class="section" id="ensembles-d-ancrage-de-cardinalite-minimale">
+<h1>Ensembles d'ancrage de cardinalité minimale</h1>
+<p>Bien que le noyau d'ancrage ait des propriétés intéressantes, il n'est pas
+minimal. Il suffit de remarquer que d'autres mots peuvent être supprimés sans
+compromettre la compréhension des autres mots. Poursuivons l'exemple de la
+figure 1. On vérifie que seulement trois mots suffisent. En effet, nous pouvons
+choisir exactement un mot parmi <em>bad</em> and <em>good</em>, un mot parmi <em>no</em> et <em>not</em>
+et, finalement, un mot parmi <em>dark</em> et <em>light</em>. En fait, il y a exactement huit
+possibilités. Par exemple, imaginons qu'un individu ne connaisse que les mots
+<em>bad</em>, <em>not</em> et <em>light</em>. Alors il peut lire les définitions du mot <em>good</em> et
+l'apprendre (puisqu'il connaît tous les mots de la définition de <em>good</em>) et
+ainsi de suite, jusqu'à ce que tous les mots du dictionnaire soient appris.</p>
+<p>Par conséquent, il est tout à fait pertinent de calculer de tels sous-ensembles
+de mots suffisamment grands et choisis convenablement. Nous les appelons
+<strong>ensembles d'ancrage</strong>. Clairement, le noyau d'ancrage est un ensemble
+d'ancrage, mais, comme il a été mentionné plus haut, il n'est pas minimal. Nous
+souhaiterions donc trouver des ensembles d'ancrage de taille minimale. Il a été
+démontré que ce problème est équivalent au problème de trouver un ou des
+transversaux de cycles de cardinalité minimale dans les graphes orientés <a class="footnote-reference" href="dictionnaires.html#id5" id="id2">[1]</a>,
+qui s'énonce comme suit :</p>
+<p><strong>Problème 1</strong> Soit <cite>G</cite> un graphe orienté. Le <em>problème du transversal de
+cycles de cardinalité minimale</em> est le problème de trouver un sous-ensemble de
+sommets <cite>U</cite> du graphe <cite>G</cite> satisfaisant les propriétés suivantes :</p>
+<ul class="simple">
+<li>
+<cite>U</cite> est de taille minimale;</li>
+<li>Si nous supprimons les sommets de <cite>U</cite> du graphe <cite>G</cite> ainsi que tous leurs arcs
+incidents, alors <cite>G</cite> est acyclique, c'est-à-dire qu'il ne contient aucun cycle.</li>
+</ul>
+<p>Malheureusement, ce problème est NP-complet, c'est-à-dire qu'il est très
+improbable que nous parvenions un jour à trouver un algorithme polynomial
+permettant de calculer un transversal de cycles de cardinalité minimale pour la
+classe générale des graphes orientés.</p>
+<p>En août 2011, nous avons été en mesure de calculer des ensembles d'ancrage de
+cardinalité minimale pour deux petits dictionnaires anglais. Nous travaillons
+actuellement sur un algorithme nous permettant de calculer de tels ensembles
+pour de plus gros dictionnaires tels que WordNet et le Merriam Webster. Notre
+stratégie actuelle combine des opérateurs de contraction de graphes présentés
+par Lin et Jou dans <a class="footnote-reference" href="dictionnaires.html#id6" id="id3">[2]</a> ainsi qu'un programme linéaire adapté au problème du
+transversal de cycles de cardinalité minimale.</p>
+</div>
+<div class="section" id="hierarchies">
+<h1>Hiérarchies</h1>
+<p>En parallèle au calcul d'ensembles d'ancrage de cardinalité minimale, nous
+sommes intéressés à classifier les mots selon leur importance dans le processus
+de l'ancrage symbolique. Plus précisément soit <cite>G</cite> un graphe orienté. Il est
+possible de construire un nouveau graphe <cite>H</cite> comme suit :</p>
+<ul class="simple">
+<li>Chaque composante fortement connexe de <cite>G</cite> est un sommet de <cite>H</cite>;</li>
+<li>Soient <cite>C</cite> et <cite>D</cite> deux composantes fortements connexes de <cite>G</cite>. Alors il
+existe un arc <cite>(C,D)</cite> dans <cite>H</cite> s'il existe un sommet <cite>u</cite> dans <cite>C</cite> et un sommet
+<cite>v</cite> dans <cite>D</cite> tels que <cite>(u,v)</cite> est un arc de <cite>G</cite>.</li>
+</ul>
+<p>Il est facile de démontrer que le graphe résultant est acyclique. En d'autres
+termes, <cite>H</cite> est le graphe quotient obtenu par rapport à la relation
+d'équivalence <em>"appartient à la même composante fortement connexe"</em> sur les
+sommets.</p>
+<p>Par conséquent, il est possible d'associer à toute composante fortement connexe
+(et donc à tout mot du dictionnaire) un entier indiquant son niveau dans
+l'ordre induit par le graphe quotient acyclique ainsi obtenu. Plus précisément,
+les mots de niveau 0 sont ceux appartenant au coeur du dictionnaire, les mots
+de niveau 1 sont ceux n'ayant que des mots de niveau 0 comme prédécesseurs, les
+mots de niveau 2 sont ceux n'ayant que des mots de niveau 0-1 comme
+prédécesseurs, etc.</p>
+<p>Lorsqu'on étudie différentes variables psycholinguistiques et leur évolution
+selon la hiérarchie de niveaux ainsi induite, nous remarquons que</p>
+<ul class="simple">
+<li>Au fur et à mesure que le niveau des mots augmente, ceux-ci sont plus
+facilement <strong>représentables par une image</strong> et deviennent plus <strong>abstraits</strong>;</li>
+<li>Les mots de niveau 0 sont plus <strong>fréquents</strong> et sont appris plus <strong>tôt</strong>,
+alors que les mots de niveaux 1, 2, 3, ... sont <strong>moins fréquents</strong> et appris
+<strong>plus tard</strong>. En revanche, il n'y a aucune différence significative entre les
+mots de niveaux 1, 2, 3, ...</li>
+</ul>
+<p>Le schéma ci-bas résume ces observations :</p>
+<div class="figure">
+<img alt="Variables psycholinguistiques" src="../images/general_schematic.gif" style="width: 500px;">
+<p class="caption">Évolution des variables psycholinguistiques par rapport à la hiérarchie sur
+les mots</p>
+</div>
+<p>Le lecteur est référé à <a class="footnote-reference" href="dictionnaires.html#id7" id="id4">[3]</a> pour plus de détails à propos de ces résultats
+statistiques.</p>
+<p>Dans l'année qui suit, nous souhaitons étendre ces différents résultats à
+d'autres dictionnaires afin de vérifier leur universalité. Nous considérons
+également d'autres problèmes très intéressants liés à la désambiguïsation
+définitionnelle et les relations sémantiques. Toute personne intéressée par la
+question est invitée à me joindre.</p>
+</div>
+<div class="section" id="references">
+<h1>Références</h1>
+<table class="docutils footnote" frame="void" id="id5" rules="none">
+<colgroup>
+<col class="label">
+<col>
+</colgroup>
+<tbody valign="top">
+<tr>
+<td class="label">[1]</td>
+<td>
+<em>(<a class="fn-backref" href="dictionnaires.html#id1">1</a>, <a class="fn-backref" href="dictionnaires.html#id2">2</a>)</em> A. Blondin Massé, G. Chicoisne, Y. Gargouri, S. Harnad, O. Marcotte et
+O. Picard. <em>How is meaning grounded in dictionary definitions?</em>,
+(TextGraphs-3) 3e Atelier sur l'algorithmique de graphes pour les langues
+naturelles (24 août 2008, Manchester, Royaume-Uni), 8p.</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="id6" rules="none">
+<colgroup>
+<col class="label">
+<col>
+</colgroup>
+<tbody valign="top">
+<tr>
+<td class="label"><a class="fn-backref" href="dictionnaires.html#id3">[2]</a></td>
+<td>H.-M. Lin et J.-Y. Jou, <em>On computing the minimum feedback vertex set of
+a directed graph by contraction operations</em>, IEEE Trans. on CAD of Integrated
+Circuits and Systems 19(3): 295-307, 2000.</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="id7" rules="none">
+<colgroup>
+<col class="label">
+<col>
+</colgroup>
+<tbody valign="top">
+<tr>
+<td class="label"><a class="fn-backref" href="dictionnaires.html#id4">[3]</a></td>
+<td>O. Picard, A. Blondin Massé, S. Harnad, O. Marcotte, G. Chicoisne et Y.
+Gargouri. <em>Hierarchies in Dictionary Definition Space</em>, (NIPS-Graphs 2009)
+Analyse de réseau et d'apprentissage à l'aide de graphes (11 décembre 2009,
+Whistler, Canada, 9p.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+
+<div id="footer">
+<hr class="text-only">
+This site is
+generated by <a href="http://github.com/sylvainhalle/FantasticWindmill">Fantastic Windmill</a>.
+</div>
+
+</div>
+
+<!--
+You are viewing a page using the LOCAL version of the site
+-->
+
+
+</body>
+</html>

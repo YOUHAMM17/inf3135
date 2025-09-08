@@ -1,0 +1,396 @@
+@import url("fruity.css");
+/* Variables */
+html, body {
+  margin: 0;
+  margin-top: 10px;
+  padding: 0;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: black;
+}
+
+#maincontainer {
+  width: 900px;
+  margin: 0 auto;
+}
+
+#topsection {
+  background: url("../images/banner.png");
+  background-repeat: no-repeat;
+  height: 200px;
+  width: 900px;
+  color: white;
+  font-family: Verdana, Geneva, sans-serif sans-serif;
+  font-size: 32px;
+}
+
+#contentwrapper {
+  float: left;
+  width: 800px;
+  background: white;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+  margin-right: 30px;
+  padding: 25px;
+  padding-right: 50px;
+  padding-left: 50px;
+}
+
+.outertube {
+  float: right;
+  background: white;
+  padding: 55px;
+}
+
+#rightcolumn {
+  background: black;
+  margin-top: -95px;
+  margin-right: -110px;
+  padding-left: 40px;
+  padding-bottom: 40px;
+}
+
+.innertube {
+  font-size: 12px;
+  width: 240px;
+  background: white;
+  -moz-border-top-right-radius: 15px;
+  border-top-right-radius: 15px;
+  margin-top: -20px;
+  margin-right: 5px;
+  padding: 15px;
+}
+
+.innertube a, .innertube a:visited, .innertube a:link {
+  color: #0058a8;
+  text-decoration: none;
+}
+
+#photo {
+  margin-top: 30px;
+  text-align: center;
+  background: url("../images/me.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  height: 150px;
+  width: auto;
+}
+
+#footer {
+  clear: left;
+  width: 100%;
+  background: black;
+  color: #FFF;
+  text-align: center;
+  padding: 20px 0;
+}
+
+#footer a {
+  color: #FFFF80;
+}
+
+#navigation {
+  list-style: none;
+  float: left;
+  font-family: Arial;
+  font-size: 16px;
+  background: black;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  color: white;
+  margin-left: -35px;
+}
+
+#navigation > li {
+  float: left;
+  color: #fff;
+}
+
+#navigation li {
+  display: block;
+  height: 2em;
+  line-height: 2em;
+  padding: 0 1.5em;
+}
+
+#navigation ul {
+  list-style: none;
+  position: absolute;
+  display: none;
+  z-index: 999;
+  background: black;
+  margin-left: -24px;
+  color: white;
+  padding-left: 0px;
+}
+
+#navigation a, #navigation a:visited, #navigation a:link {
+  text-decoration: none;
+  color: white;
+}
+
+#navigation li:hover ul {
+  display: block;
+}
+
+#navigation > li:hover {
+  background: #0058a8;
+}
+
+#navigation ul li:hover {
+  background: #c73700;
+}
+
+#content {
+  padding: 0;
+  padding-left: 253px;
+}
+
+#content > div {
+  padding: 10px;
+  background: white;
+  min-height: 100%;
+}
+
+#content > div > h1 {
+  margin-top: 0;
+}
+
+.text-only {
+  display: none;
+}
+
+/* Static pages */
+h1 {
+  font-size: 13pt;
+  font-weight: 200;
+  font-family: Verdana, Geneva, sans-serif;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-color: #82a83a;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+h1.title {
+  font-size: 18pt;
+  border-bottom-width: 4px;
+  border-bottom-style: double;
+  border-color: #5b3615;
+  margin-top: 15px;
+}
+
+h2 {
+  font-size: 12pt;
+}
+
+#equipes table, #bareme table, #echeancier table, #projet-de-session table, #horaire table, #id1 table, #calendario table {
+  width: auto;
+  font-family: Tahoma, Geneva, sans-serif;
+  border-style: solid;
+  border-width: thin;
+  border-color: #344451;
+  border-collapse: collapse;
+  padding: 2px;
+}
+
+#equipes table th, #bareme table th, #echeancier table th, #projet-de-session table th, #horaire table th, #id1 table th, #calendario table th {
+  font-size: 14px;
+  font-weight: 400;
+  padding: 2px 10px;
+  border-style: solid;
+  border-width: thin;
+  border-color: #344451;
+  border-bottom-width: medium;
+  border-bottom-color: #344451;
+  border-bottom-style: double;
+  text-align: left;
+  background-color: #5b3615;
+  margin: 0;
+  color: white;
+}
+
+#equipes table td, #bareme table td, #echeancier table td, #horaire table td, #id1 table td, #calendario table td {
+  font-size: 14px;
+  padding: 4px 10px;
+  border-style: solid;
+  border-width: thin;
+  border-color: #344451;
+  text-align: left;
+  background-color: white;
+  margin: 0;
+  color: #523325;
+  vertical-align: middle;
+  max-width: 200px;
+  word-wrap: break-word;
+}
+
+#contenu table {
+  width: auto;
+  font-family: Tahoma, Geneva, sans-serif;
+  border-style: solid;
+  border-width: thin;
+  border-color: #344451;
+  border-collapse: collapse;
+  padding: 2px;
+}
+
+#contenu table th {
+  font-size: 14px;
+  font-weight: 400;
+  padding: 2px 10px;
+  border-style: solid;
+  border-width: thin;
+  border-color: #344451;
+  border-bottom-width: medium;
+  border-bottom-color: #344451;
+  border-bottom-style: double;
+  text-align: left;
+  background-color: #5b3615;
+  margin: 0;
+  color: white;
+}
+
+#contenu table td {
+  font-size: 14px;
+  padding: 4px 10px;
+  border-style: solid;
+  border-width: thin;
+  border-color: #344451;
+  text-align: left;
+  background-color: white;
+  margin: 0;
+  color: #523325;
+  vertical-align: middle;
+  max-width: 400px;
+  word-wrap: break-word;
+}
+
+#projet-de-session table td {
+  font-size: 14px;
+  padding: 4px 10px;
+  border-style: solid;
+  border-width: thin;
+  border-color: #344451;
+  text-align: left;
+  background-color: white;
+  margin: 0;
+  color: #523325;
+  vertical-align: middle;
+  max-width: 180px;
+  word-wrap: break-word;
+}
+
+.document {
+  margin-bottom: 20px;
+}
+
+.document p {
+  line-height: 1.5;
+  color: black;
+  text-align: justify;
+}
+
+dl.docutils > dt {
+  font-weight: bold;
+}
+
+dl.docutils > dd > ul {
+  padding-left: 30px;
+}
+
+dl.docutils > dd {
+  margin-left: 0px;
+  padding-left: 0px;
+}
+
+.document li {
+  margin-bottom: 5px;
+  line-height: 1.5;
+}
+
+.document a, .document a:visited, .document a:link {
+  color: #0058a8;
+  text-decoration: none;
+}
+
+.document a:hover {
+  color: #c73700;
+}
+
+/* Bullets */
+li.scholar, li.bitbucket, li.github, li.gitlab {
+  list-style-type: none;
+  height: 46px;
+  padding-left: 80px;
+  margin-left: -40px;
+}
+
+li.scholar {
+  background: url("../images/scholar.gif") no-repeat top left;
+}
+
+li.bitbucket {
+  background: url("../images/bitbucket.jpeg") no-repeat top left;
+}
+
+li.github {
+  background: url("../images/github.jpeg") no-repeat top left;
+}
+
+li.gitlab {
+  background: url("../images/github.jpeg") no-repeat top left;
+}
+
+/* Lang links */
+.langlink a, .langlink a:visited, .langlink a:hover {
+  float: right;
+  color: #82a83a;
+  text-decoration: none;
+  margin-top: -30px;
+}
+
+/* Posts list */
+#post-list {
+  padding-left: 25px;
+  padding-right: 25px;
+  width: 450px;
+}
+
+#post-list li {
+  line-height: 1.5;
+  background-color: #F6F6F6;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #5b3615;
+  margin-bottom: 10px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+#post-list a,
+#post-list a:visited,
+#post-list a:hover {
+  color: #0058a8;
+  text-decoration: none;
+  font-weight: 900;
+}
+
+#post-list .author {
+  font-size: 10px;
+  float: right;
+  font-style: italic;
+}
+
+#post-list .date {
+  font-size: 10px;
+  float: right;
+  margin-left: 10px;
+}
+
+/*# sourceMappingURL=screen.css.map */

@@ -1,0 +1,376 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!-- MathJax  --><html>
+<head>
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+<!-- Sage Single Cell Server -->
+<script type="text/javascript" src="https://sagecell.sagemath.org/static/jquery.min.js"></script>
+<script type="text/javascript" src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script>
+<script type="text/javascript">
+    $(function () {
+    // Make the div with id 'mycell' a Sage cell
+    sagecell.makeSagecell({inputLocation:  '#mycell',
+                           template:       sagecell.templates.minimal,
+                           evalButtonText: 'Activate'});
+    // Make *any* div with class 'compute' a Sage cell
+    sagecell.makeSagecell({inputLocation: 'div.compute',
+                           evalButtonText: 'Evaluate'});
+    });
+</script>
+
+
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Algorithmes d'optimisation combinatoire - Homepage of Alexandre Blondin Massé</title>
+<link rel="stylesheet" type="text/css" media="screen" href="../css/screen.css">
+<meta name="author" content="Alexandre Blondin Massé">
+
+
+</head>
+<body>
+
+<div id="maincontainer">
+
+<div id="topsection"></div>
+
+<div id="menu">
+<ul id="navigation">
+<li><a href="https://ablondin.uqam.ca/index">Accueil</a></li>
+<li><a href="https://ablondin.uqam.ca/posts/fr/blogue">Blogue</a></li>
+<li>Recherche
+  <ul>
+    <li><a href="publications.html">Publications</a></li>
+    <li><a href="etudiants.html">Étudiants</a></li>
+    <li><a href="combinatoire.html">Combinatoire</a></li>
+    <li><a href="dictionnaires.html">Dictionnaires</a></li>
+  </ul>
+</li>
+<li>Enseignement
+  <ul>
+    <li><a href="inf1070.html">INF1070 Utilisation et administration des systèmes informatiques</a></li>
+    <li><a href="inf1130.html">INF1130 Mathématiques pour informaticiens</a></li>
+    <li><a href="inf3135.html">INF3135 Construction et maintenance de logiciels</a></li>
+    <li><a href="inf5071.html">INF5071 Infographie</a></li>
+    <li><a href="inf6120.html">INF6120 Programmation fonctionnelle et logique</a></li>
+    <li><a href="inf7341.html">INF7341 Structures de données</a></li>
+    <li><a href="inf7440.html">INF7440 Conception et analyse d'algorithmes</a></li>
+    <li><a href="inf889b.html">INF889B Algorithmes d'optimisation combinatoire</a></li>
+    <li><a href="mat1060.html">MAT1060 Mathématiques algorithmiques</a></li>
+    <li><a href="https://ablondin.uqam.ca/es/8mqg210">8MQG210 Modelado de sistemas aleatorios</a></li>
+  </ul>
+</li>
+<li>Logiciels
+  <ul>
+    <li><a href="sage.html">Sage</a></li>
+  </ul>
+</li>
+</ul>
+
+</div>
+
+<div id="contentwrapper">
+
+<div id="contentcolumn">
+
+<div class="outertube">
+<div id="rightcolumn">
+<div class="innertube">
+<div id="photo">
+</div>
+<h2>Coordonnées</h2>
+<p>
+Département d'informatique<br>
+Université du Québec à Montréal<br>
+CP 8888, Succ. Centre-ville<br>
+Montréal (Québec) H3C 3P8<br>
+Tél: 514-987-3000, #5516<br>
+Bureau: PK-4525<br>
+Courriel: blondin_masse[point]alexandre<br>
+[arobase]uqam[point]ca<br>
+</p>
+<h2>À propos</h2>
+<p>
+J'ai complété mon doctorat en mathématiques-informatique sous la supervision des professeurs <a href="http://lacim.uqam.ca/~brlek/">Srecko Brlek</a>, de l'Université du Québec à Montréal, au Canada, et de <a href="http://www.lama.univ-savoie.fr/~vuillon/">Laurent Vuillon</a>, de l'Université de Savoie, en France.
+</p>
+<p>
+Depuis le 1er août 2014, je suis professeur adjoint à l'Université du Québec à Montréal, au Canada.
+</p>
+<p>
+</p>
+<h2>Liens utiles</h2>
+<ul>
+  <li>Mon profil sur <a href="http://scholar.google.fr/citations?user=v8C9a9QAAAAJ&amp;hl=fr&amp;oi=ao">Google Scholar</a>
+</li>
+  <li>Mes dépôts <a href="https://gitlab.com/ablondin">GitLab</a>
+</li>
+  <li>Mes dépôts <a href="https://bitbucket.org/ablondin">Bitbucket</a>
+</li>
+  <li>Mes dépôts <a href="https://github.com/ablondin">Github</a>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+
+<h1 class="title">Algorithmes d'optimisation combinatoire</h1>
+<div class="document" id="algorithmes-d-optimisation-combinatoire">
+
+
+<p>Bienvenue sur le site du cours Algorithmes d'optimisation combinatoire
+- INF889B que j'enseigne à l'hiver 2020!</p>
+<div class="section" id="annonces">
+<h1>Annonces</h1>
+<dl class="docutils">
+<dt>16 avril 2020</dt>
+<dd>
+<ul class="first last simple">
+<li>Ajout des diapositives du chapitre 7, parties (b) et (c)</li>
+</ul>
+</dd>
+<dt>11 avril 2020</dt>
+<dd>
+<ul class="first last simple">
+<li>Ajout des diapositives du chapitre 7, partie (a)</li>
+</ul>
+</dd>
+<dt>11 mars 2020</dt>
+<dd>
+<ul class="first last simple">
+<li>Ajout des diapositives du chapitre 6</li>
+</ul>
+</dd>
+<dt>12 février 2020</dt>
+<dd>
+<ul class="first last simple">
+<li>Ajout des diapositives du chapitre 5</li>
+</ul>
+</dd>
+<dt>28 janvier 2020</dt>
+<dd>
+<ul class="first last simple">
+<li>Ajout des diapositives du chapitre 4</li>
+</ul>
+</dd>
+<dt>22 janvier 2020</dt>
+<dd>
+<ul class="first last simple">
+<li>Ajout du devoir 1</li>
+<li>Ajout des diapositives des chapitres 2 et 3</li>
+</ul>
+</dd>
+<dt>15 janvier 2020</dt>
+<dd>
+<ul class="first last simple">
+<li>Activation du site</li>
+<li>Activation du plan de cours</li>
+<li>Ajout des diapositives du chapitre 1</li>
+</ul>
+</dd>
+</dl>
+</div>
+<div class="section" id="contenu">
+<h1>Contenu</h1>
+<ul class="simple">
+<li>Chapitre 1 : Introduction
+<a class="reference external" href="https://ablondin.uqam.ca/files/inf889b/hiv2020/01-intro.pdf">[diapositives]</a>
+</li>
+<li>Chapitre 2 : Modélisation
+<a class="reference external" href="https://ablondin.uqam.ca/files/inf889b/hiv2020/02-modelisation.pdf">[diapositives]</a>
+</li>
+<li>Chapitre 3 : Optimisation exacte
+<a class="reference external" href="https://ablondin.uqam.ca/files/inf889b/hiv2020/03-exact.pdf">[diapositives]</a>
+</li>
+<li>Chapitre 4 : Optimisation convexe
+<a class="reference external" href="https://ablondin.uqam.ca/files/inf889b/hiv2020/04-convexe.pdf">[diapositives]</a>
+</li>
+<li>Chapitre 5 : Méta-heuristiques
+<a class="reference external" href="https://ablondin.uqam.ca/files/inf889b/hiv2020/05-metaheuristiques.pdf">[diapositives]</a>
+</li>
+<li>Chapitre 6 : Optimisation bio-inspirée
+<a class="reference external" href="https://ablondin.uqam.ca/files/inf889b/hiv2020/06-naturel.pdf">[diapositives]</a>
+</li>
+<li>Chapitre 7 : Optimisation par apprentissage
+<a class="reference external" href="https://ablondin.uqam.ca/files/inf889b/hiv2020/07a-apprentissage-intro.pdf">[partie a]</a>
+<a class="reference external" href="https://ablondin.uqam.ca/files/inf889b/hiv2020/07b-apprentissage-renforcement.pdf">[partie b]</a>
+<a class="reference external" href="https://ablondin.uqam.ca/files/inf889b/hiv2020/07c-apprentissage-chaines-markov.pdf">[partie c]</a>
+<a class="reference external" href="https://ablondin.uqam.ca/files/inf889b/hiv2020/07d-apprentissage-processus-markoviens.pdf">[partie d]</a>
+</li>
+</ul>
+</div>
+<div class="section" id="ressources">
+<h1>Ressources</h1>
+<ul class="simple">
+<li><a class="reference external" href="https://ablondin.uqam.ca/files/inf889b/hiv2020/plan.pdf">Plan de cours</a></li>
+<li><a class="reference external" href="https://uqam.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=78fa34df-a7aa-446b-ab6d-ab4300fb8ee4">Vidéos du cours</a></li>
+<li><a class="reference external" href="https://gitlab.info.uqam.ca/inf889b/code">Code</a></li>
+<li><a class="reference external" href="https://gitlab.info.uqam.ca/inf889b/hiv2020-devoir1">Devoir 1</a></li>
+<li><a class="reference external" href="https://gitlab.info.uqam.ca/inf889b/projets">Projets</a></li>
+<li>Actes de colloque de la conférence CPAIOR:
+<a class="reference external" href="https://ablondin.uqam.ca/files/inf889b/hiv2020/cpaior-2016.pdf">[2016]</a>
+<a class="reference external" href="https://ablondin.uqam.ca/files/inf889b/hiv2020/cpaior-2017.pdf">[2017]</a>
+<a class="reference external" href="https://ablondin.uqam.ca/files/inf889b/hiv2020/cpaior-2018.pdf">[2018]</a>
+<a class="reference external" href="https://ablondin.uqam.ca/files/inf889b/hiv2020/cpaior-2019.pdf">[2019]</a>
+</li>
+</ul>
+</div>
+<div class="section" id="id1">
+<h1>Contenu</h1>
+<p>Le contenu abordé chaque semaine est détaillé dans le tableau ci-bas. Chaque
+cours magistral sera disponible sous format vidéo (à moins de problèmes
+techniques qui peuvent survenir pendant l'enregistrement).</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="15%">
+<col width="18%">
+<col width="67%">
+</colgroup>
+<thead valign="bottom">
+<tr>
+<th class="head">Semaine</th>
+<th class="head">Date</th>
+<th class="head">Contenu</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr>
+<td>1</td>
+<td>8 janv</td>
+<td>
+<p class="first">Introduction</p>
+<ul class="last simple">
+<li>Présentation du cours</li>
+<li>Exemples</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>2</td>
+<td>15 janv</td>
+<td>
+<p class="first">Modélisation</p>
+<ul class="last simple">
+<li>Vocabulaire de base</li>
+<li>Algorithmes</li>
+<li>Expériences</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>3</td>
+<td>22 janv</td>
+<td>
+<p class="first">Modélisation (suite)</p>
+<ul class="simple">
+<li>Exemples complets</li>
+</ul>
+<p>Optimisation exacte</p>
+<ul class="last simple">
+<li>Généralités</li>
+<li>Programmation dynamique</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>4</td>
+<td>29 janv</td>
+<td>
+<p class="first">Optimisation exacte (suite)</p>
+<ul class="simple">
+<li>Séparation et évaluation progressive</li>
+<li>Paramètre fixe</li>
+</ul>
+<p class="last">Optimisation convexe</p>
+</td>
+</tr>
+<tr>
+<td>5</td>
+<td>5 fév</td>
+<td>
+<p class="first"><strong>Choix d'un article</strong></p>
+<p class="last">Optimisation convexe (suite)</p>
+</td>
+</tr>
+<tr>
+<td>6</td>
+<td>12 fév</td>
+<td> </td>
+</tr>
+<tr>
+<td>7</td>
+<td>19 fév</td>
+<td><strong>Présentation d'un article</strong></td>
+</tr>
+<tr>
+<td>8</td>
+<td>26 fév</td>
+<td><strong>Pas de cours (relâche)</strong></td>
+</tr>
+<tr>
+<td>9</td>
+<td>4 mars</td>
+<td><strong>Remise du résumé d'article</strong></td>
+</tr>
+<tr>
+<td>10</td>
+<td>11 mars</td>
+<td> </td>
+</tr>
+<tr>
+<td>11</td>
+<td>18 mars</td>
+<td><strong>Choix du projet de session</strong></td>
+</tr>
+<tr>
+<td>12</td>
+<td>25 mars</td>
+<td> </td>
+</tr>
+<tr>
+<td>13</td>
+<td>1er avril</td>
+<td> </td>
+</tr>
+<tr>
+<td>14</td>
+<td>8 avril</td>
+<td> </td>
+</tr>
+<tr>
+<td>15</td>
+<td>15 avril</td>
+<td><strong>Présentation du projet de session</strong></td>
+</tr>
+<tr>
+<td>16</td>
+<td>22 avril</td>
+<td> </td>
+</tr>
+<tr>
+<td>17</td>
+<td>29 avril</td>
+<td><strong>Remise du projet de session</strong></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+
+<div id="footer">
+<hr class="text-only">
+This site is
+generated by <a href="http://github.com/sylvainhalle/FantasticWindmill">Fantastic Windmill</a>.
+</div>
+
+</div>
+
+<!--
+You are viewing a page using the LOCAL version of the site
+-->
+
+
+</body>
+</html>

@@ -1,0 +1,438 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!-- MathJax  --><html>
+<head>
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+<!-- Sage Single Cell Server -->
+<script type="text/javascript" src="https://sagecell.sagemath.org/static/jquery.min.js"></script>
+<script type="text/javascript" src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script>
+<script type="text/javascript">
+    $(function () {
+    // Make the div with id 'mycell' a Sage cell
+    sagecell.makeSagecell({inputLocation:  '#mycell',
+                           template:       sagecell.templates.minimal,
+                           evalButtonText: 'Activate'});
+    // Make *any* div with class 'compute' a Sage cell
+    sagecell.makeSagecell({inputLocation: 'div.compute',
+                           evalButtonText: 'Evaluate'});
+    });
+</script>
+
+
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Mathématiques pour informaticiens - Homepage of Alexandre Blondin Massé</title>
+<link rel="stylesheet" type="text/css" media="screen" href="../css/screen.css">
+<meta name="author" content="Alexandre Blondin Massé">
+
+
+</head>
+<body>
+
+<div id="maincontainer">
+
+<div id="topsection"></div>
+
+<div id="menu">
+<ul id="navigation">
+<li><a href="https://ablondin.uqam.ca/index">Accueil</a></li>
+<li><a href="https://ablondin.uqam.ca/posts/fr/blogue">Blogue</a></li>
+<li>Recherche
+  <ul>
+    <li><a href="publications.html">Publications</a></li>
+    <li><a href="etudiants.html">Étudiants</a></li>
+    <li><a href="combinatoire.html">Combinatoire</a></li>
+    <li><a href="dictionnaires.html">Dictionnaires</a></li>
+  </ul>
+</li>
+<li>Enseignement
+  <ul>
+    <li><a href="inf1070.html">INF1070 Utilisation et administration des systèmes informatiques</a></li>
+    <li><a href="inf1130.html">INF1130 Mathématiques pour informaticiens</a></li>
+    <li><a href="inf3135.html">INF3135 Construction et maintenance de logiciels</a></li>
+    <li><a href="inf5071.html">INF5071 Infographie</a></li>
+    <li><a href="inf6120.html">INF6120 Programmation fonctionnelle et logique</a></li>
+    <li><a href="inf7341.html">INF7341 Structures de données</a></li>
+    <li><a href="inf7440.html">INF7440 Conception et analyse d'algorithmes</a></li>
+    <li><a href="inf889b.html">INF889B Algorithmes d'optimisation combinatoire</a></li>
+    <li><a href="mat1060.html">MAT1060 Mathématiques algorithmiques</a></li>
+    <li><a href="https://ablondin.uqam.ca/es/8mqg210">8MQG210 Modelado de sistemas aleatorios</a></li>
+  </ul>
+</li>
+<li>Logiciels
+  <ul>
+    <li><a href="sage.html">Sage</a></li>
+  </ul>
+</li>
+</ul>
+
+</div>
+
+<div id="contentwrapper">
+
+<div id="contentcolumn">
+
+<div class="outertube">
+<div id="rightcolumn">
+<div class="innertube">
+<div id="photo">
+</div>
+<h2>Coordonnées</h2>
+<p>
+Département d'informatique<br>
+Université du Québec à Montréal<br>
+CP 8888, Succ. Centre-ville<br>
+Montréal (Québec) H3C 3P8<br>
+Tél: 514-987-3000, #5516<br>
+Bureau: PK-4525<br>
+Courriel: blondin_masse[point]alexandre<br>
+[arobase]uqam[point]ca<br>
+</p>
+<h2>À propos</h2>
+<p>
+J'ai complété mon doctorat en mathématiques-informatique sous la supervision des professeurs <a href="http://lacim.uqam.ca/~brlek/">Srecko Brlek</a>, de l'Université du Québec à Montréal, au Canada, et de <a href="http://www.lama.univ-savoie.fr/~vuillon/">Laurent Vuillon</a>, de l'Université de Savoie, en France.
+</p>
+<p>
+Depuis le 1er août 2014, je suis professeur adjoint à l'Université du Québec à Montréal, au Canada.
+</p>
+<p>
+</p>
+<h2>Liens utiles</h2>
+<ul>
+  <li>Mon profil sur <a href="http://scholar.google.fr/citations?user=v8C9a9QAAAAJ&amp;hl=fr&amp;oi=ao">Google Scholar</a>
+</li>
+  <li>Mes dépôts <a href="https://gitlab.com/ablondin">GitLab</a>
+</li>
+  <li>Mes dépôts <a href="https://bitbucket.org/ablondin">Bitbucket</a>
+</li>
+  <li>Mes dépôts <a href="https://github.com/ablondin">Github</a>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+
+<h1 class="title">Mathématiques pour informaticiens</h1>
+<div class="document" id="mathematiques-pour-informaticiens">
+
+
+<p>Bienvenue sur le site du cours Mathématiques pour informaticiens - INF1130 que
+j'ai enseigné à l'hiver 2015.</p>
+<div class="section" id="annonces">
+<h1>Annonces</h1>
+<dl class="docutils">
+<dt>30 avril 2015</dt>
+<dd>
+<ul class="first last simple">
+<li>L'énoncé et la solution de l'examen 2 sont maintenant disponibles</li>
+</ul>
+</dd>
+<dt>24 avril 2015</dt>
+<dd>
+<ul class="first last simple">
+<li>La solution du devoir 2 est maintenant disponible</li>
+</ul>
+</dd>
+<dt>23 avril 2015</dt>
+<dd>
+<ul class="first last simple">
+<li>L'examen final aura lieu samedi, le 25 avril 2015, de 13h30 à 16h30</li>
+<li>Les locaux pour l'examen final sont les suivants<ul>
+<li>
+<strong>BELP-LAMC</strong> : PK-R610</li>
+<li>
+<strong>LEBA-ZAND</strong> : PK-R650</li>
+</ul>
+</li>
+</ul>
+</dd>
+<dt>13 avril 2015</dt>
+<dd>
+<ul class="first last simple">
+<li>La question 4(b) du devoir a été reformulée, car elle contenait certaines
+erreurs</li>
+</ul>
+</dd>
+<dt>11 avril 2015</dt>
+<dd>
+<ul class="first last simple">
+<li>Une erreur a été corrigée dans l'énoncé du devoir : À la question 4(a), il y
+a <span class="formula">11</span> partages à donner et non <span class="formula">10</span>
+</li>
+</ul>
+</dd>
+<dt>3 avril 2015</dt>
+<dd>
+<ul class="first last simple">
+<li>Je vous encourage à lire <a class="reference external" href="http://fr.wikipedia.org/wiki/Algorithme_r%C3%A9cursif#La_pr.C3.A9sentation_r.C3.A9cursive_d.27un_algorithme_conduit-elle_.C3.A0_un_programme_moins_efficace_qu.27une_pr.C3.A9sentation_it.C3.A9rative_.3F">la discussion suivante sur Wikipedia</a>
+concernant l'efficacité des algorithmes itératifs en comparaison aux
+algorithmes récursifs</li>
+</ul>
+</dd>
+<dt>28 mars 2015</dt>
+<dd>
+<ul class="first last simple">
+<li>Une erreur s'est glissée dans le devoir 2, à la question 4(b). On indique
+que <tt class="docutils literal">Partage</tt> <span class="formula">(4, 2)</span> devrait retourner les partages <span class="formula">(4)</span> et <span class="formula">(3, 1)</span>.
+On devrait plutôt lire que les partages retournés sont <span class="formula">(4)</span>, <span class="formula">(3, 1)</span> <strong>et</strong>
+<span class="formula">(2, 2)</span> (ce dernier avait été oublié). L'énoncé a donc été corrigé.</li>
+</ul>
+</dd>
+<dt>27 mars 2015</dt>
+<dd>
+<ul class="first last simple">
+<li>L'énoncé du devoir 2 est maintenant disponible</li>
+</ul>
+</dd>
+<dt>3 mars 2015</dt>
+<dd>
+<ul class="first last simple">
+<li>L'examen intra aura lieu samedi, le 7 mars 2015, de 13h30 à 16h30</li>
+<li>Les locaux pour l'examen intra sont les suivants<ul>
+<li>
+<strong>BELP-LAMC</strong> : PK-R610</li>
+<li>
+<strong>LEBA-ZAND</strong> : PK-R650</li>
+</ul>
+</li>
+</ul>
+</dd>
+<dt>27 février 2015</dt>
+<dd>
+<ul class="first last simple">
+<li>Ajout de la solution du devoir 1</li>
+</ul>
+</dd>
+<dt>13 février 2015</dt>
+<dd>
+<ul class="first last simple">
+<li>La date de remise du devoir 1 est reportée au vendredi, 27 février 2015,
+avant 16h00</li>
+<li>Une coquille s'est glissée dans l'énoncé du devoir 1 : à la question 1(b),
+on devrait lire <span class="formula"><i>Q</i><sub>3</sub> : ∃<i>y</i>∀<i>x</i><i>P</i>(<i>x</i>, <i>y</i>)</span> plutôt que <span class="formula"><i>Q</i><sub>3</sub> : ∃<i>x</i>∀<i>y</i><i>P</i>(<i>x</i>, <i>y</i>)</span> (la version corrigée a été déposée sur le site et sur
+Moodle)</li>
+</ul>
+</dd>
+<dt>4 février 2015</dt>
+<dd>
+<ul class="first last simple">
+<li>Ajout de l'énoncé du devoir 1</li>
+</ul>
+</dd>
+<dt>22 janvier 2015</dt>
+<dd>
+<ul class="first last simple">
+<li>Ajout d'exercices supplémentaires</li>
+</ul>
+</dd>
+<dt>6 janvier 2015</dt>
+<dd>
+<ul class="first last simple">
+<li>Activation du site</li>
+</ul>
+</dd>
+</dl>
+</div>
+<div class="section" id="documents">
+<h1>Documents</h1>
+<ul class="simple">
+<li><a class="reference external" href="https://ablondin.uqam.ca/files/inf1130/hiv2015/plan.pdf">Plan de cours</a></li>
+<li>
+<a class="reference external" href="http://www.moodle2.uqam.ca/coursv3/course/view.php?id=4558">Site Moodle</a> :
+vous y trouverez certains documents supplémentaires pour le cours.</li>
+<li><a class="reference external" href="https://ablondin.uqam.ca/files/inf1130/hiv2015/exercices.pdf">Exercices supplémentaires</a></li>
+</ul>
+</div>
+<div class="section" id="devoirs-et-examen">
+<h1>Devoirs et examen</h1>
+<ul class="simple">
+<li>Devoir 1
+<a class="reference external" href="https://ablondin.uqam.ca/files/inf1130/hiv2015/devoir1.pdf">[énoncé]</a>
+<a class="reference external" href="https://ablondin.uqam.ca/files/inf1130/hiv2015/solution-devoir1.pdf">[solution]</a>
+</li>
+<li>Examen 1
+<a class="reference external" href="https://ablondin.uqam.ca/files/inf1130/hiv2015/examen1.pdf">[énoncé]</a>
+<a class="reference external" href="https://ablondin.uqam.ca/files/inf1130/hiv2015/solution-examen1.pdf">[solution]</a>
+</li>
+<li>Devoir 2
+<a class="reference external" href="https://ablondin.uqam.ca/files/inf1130/hiv2015/devoir2.pdf">[énoncé]</a>
+<a class="reference external" href="https://ablondin.uqam.ca/files/inf1130/hiv2015/solution-devoir2.pdf">[solution]</a>
+</li>
+<li>Examen 2
+<a class="reference external" href="https://ablondin.uqam.ca/files/inf1130/hiv2015/examen2.pdf">[énoncé]</a>
+<a class="reference external" href="https://ablondin.uqam.ca/files/inf1130/hiv2015/solution-examen2.pdf">[solution]</a>
+</li>
+</ul>
+</div>
+<div class="section" id="echeancier">
+<h1>Échéancier</h1>
+<p>Le tableau ci-bas donne un aperçu de la matière abordée à chaque cours.</p>
+<p><strong>Remarque :</strong> Je me réserve la possibilité de modifier les sujets abordés au
+fur et à mesure que le trimestre avance, par exemple si certaines notions
+demandent plus de temps que prévu.</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="10%">
+<col width="11%">
+<col width="39%">
+<col width="40%">
+</colgroup>
+<thead valign="bottom">
+<tr>
+<th class="head">Semaine</th>
+<th class="head">Date</th>
+<th class="head">Contenu</th>
+<th class="head">Exercices</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr>
+<td>1</td>
+<td>8 janv</td>
+<td>Présentation du cours, logique</td>
+<td>
+<strong>1.1</strong> #6, 7, 15, 17, 22
+<strong>1.2</strong> #7, 9, 12, 13
+<strong>1.3</strong> #5, 6, 13, 22, 23, 26, 27</td>
+</tr>
+<tr>
+<td>2</td>
+<td>15 janv</td>
+<td>Ensembles</td>
+<td>
+<strong>1.4</strong> #4, 5, 6, 7, 9, 11, 15,
+16, 20, 24 <strong>1.5</strong> #1, 3, 5, 6,
+18, 19, 24, 30</td>
+</tr>
+<tr>
+<td>3</td>
+<td>22 janv</td>
+<td>Fonctions</td>
+<td>
+<strong>1.6</strong> #2, 5, 6, 8, 9, 14, 15,
+16, 19  <strong>Ex. supp.</strong> section 1</td>
+</tr>
+<tr>
+<td>4</td>
+<td>29 janv</td>
+<td>Suites, mots et sommes</td>
+<td>
+<strong>1.7</strong> #5, 7, 9, 11, 12, 13, 15,
+16, 19</td>
+</tr>
+<tr>
+<td>5</td>
+<td>5 fév</td>
+<td>Sommes (suite), entiers et
+division</td>
+<td rowspan="2">
+<strong>2.3</strong> #8, 9, 10, 11, 13, 14, 17,
+24, 27, 28</td>
+</tr>
+<tr>
+<td>6</td>
+<td>12 fév</td>
+<td>Entiers et division (suite)</td>
+</tr>
+<tr>
+<td>7</td>
+<td>19 fév</td>
+<td>Démonstrations mathématiques</td>
+<td>
+<strong>3.1</strong> #1, 3, 8, 9, 10, 11, 12,
+13, 15, 16, 17</td>
+</tr>
+<tr>
+<td>8</td>
+<td>26 fév</td>
+<td>Révision</td>
+<td> </td>
+</tr>
+<tr>
+<td>9</td>
+<td>5 mars</td>
+<td>Semaine de relâche (pas de cours)</td>
+<td> </td>
+</tr>
+<tr>
+<td>10</td>
+<td>12 mars</td>
+<td>Algorithmes</td>
+<td>
+<strong>2.1</strong> #1, 3, 4, 7, 9, 20
+<strong>1.8</strong> #1, 2</td>
+</tr>
+<tr>
+<td>11</td>
+<td>19 mars</td>
+<td>Complexité des algorithmes</td>
+<td>
+<strong>1.8</strong> #13, 15, 19, 20, 21
+<strong>2.2</strong> #1, 3, 4, 7, 8, 9</td>
+</tr>
+<tr>
+<td>12</td>
+<td>26 mars</td>
+<td>Induction</td>
+<td>
+<strong>3.2</strong> #7, 8, 12, 13, 14, 15,
+19, 34</td>
+</tr>
+<tr>
+<td>13</td>
+<td>2 avril</td>
+<td>Grève (pas de cours)</td>
+<td> </td>
+</tr>
+<tr>
+<td>14</td>
+<td>9 avril</td>
+<td>Récursivité</td>
+<td>
+<strong>3.3</strong> #1, 5, 7, 20, 21, 23, 26,
+27, 31, 36, 37, 38, 39, 40
+<strong>3.4</strong> #2, 4, 6, 9, 10, 11, 14,
+15, 16</td>
+</tr>
+<tr>
+<td>15</td>
+<td>16 avril</td>
+<td>Relations</td>
+<td>
+<strong>6.1</strong> #2, 3, 4, 6, 15, 17, 19,
+20, 21  <strong>6.3</strong> #1, 2, 4, 7, 8, 9,
+10, 13, 14, 15, 16, 17</td>
+</tr>
+<tr>
+<td>16</td>
+<td>23 avril</td>
+<td>Relations (suite)</td>
+<td>
+<strong>6.4</strong> #16, 17, 19, 20, 25, 27,
+29  <strong>6.5</strong> #1, 2, 11, 12, 13, 14,
+15, 19, 22, 25</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+
+<div id="footer">
+<hr class="text-only">
+This site is
+generated by <a href="http://github.com/sylvainhalle/FantasticWindmill">Fantastic Windmill</a>.
+</div>
+
+</div>
+
+<!--
+You are viewing a page using the LOCAL version of the site
+-->
+
+
+</body>
+</html>

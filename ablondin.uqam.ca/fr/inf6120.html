@@ -1,0 +1,555 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!-- MathJax  --><html>
+<head>
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+<!-- Sage Single Cell Server -->
+<script type="text/javascript" src="https://sagecell.sagemath.org/static/jquery.min.js"></script>
+<script type="text/javascript" src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script>
+<script type="text/javascript">
+    $(function () {
+    // Make the div with id 'mycell' a Sage cell
+    sagecell.makeSagecell({inputLocation:  '#mycell',
+                           template:       sagecell.templates.minimal,
+                           evalButtonText: 'Activate'});
+    // Make *any* div with class 'compute' a Sage cell
+    sagecell.makeSagecell({inputLocation: 'div.compute',
+                           evalButtonText: 'Evaluate'});
+    });
+</script>
+
+
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Programmation fonctionnelle et logique - Homepage of Alexandre Blondin Massé</title>
+<link rel="stylesheet" type="text/css" media="screen" href="../css/screen.css">
+<meta name="author" content="Alexandre Blondin Massé">
+
+
+</head>
+<body>
+
+<div id="maincontainer">
+
+<div id="topsection"></div>
+
+<div id="menu">
+<ul id="navigation">
+<li><a href="https://ablondin.uqam.ca/index">Accueil</a></li>
+<li><a href="https://ablondin.uqam.ca/posts/fr/blogue">Blogue</a></li>
+<li>Recherche
+  <ul>
+    <li><a href="publications.html">Publications</a></li>
+    <li><a href="etudiants.html">Étudiants</a></li>
+    <li><a href="combinatoire.html">Combinatoire</a></li>
+    <li><a href="dictionnaires.html">Dictionnaires</a></li>
+  </ul>
+</li>
+<li>Enseignement
+  <ul>
+    <li><a href="inf1070.html">INF1070 Utilisation et administration des systèmes informatiques</a></li>
+    <li><a href="inf1130.html">INF1130 Mathématiques pour informaticiens</a></li>
+    <li><a href="inf3135.html">INF3135 Construction et maintenance de logiciels</a></li>
+    <li><a href="inf5071.html">INF5071 Infographie</a></li>
+    <li><a href="inf6120.html">INF6120 Programmation fonctionnelle et logique</a></li>
+    <li><a href="inf7341.html">INF7341 Structures de données</a></li>
+    <li><a href="inf7440.html">INF7440 Conception et analyse d'algorithmes</a></li>
+    <li><a href="inf889b.html">INF889B Algorithmes d'optimisation combinatoire</a></li>
+    <li><a href="mat1060.html">MAT1060 Mathématiques algorithmiques</a></li>
+    <li><a href="https://ablondin.uqam.ca/es/8mqg210">8MQG210 Modelado de sistemas aleatorios</a></li>
+  </ul>
+</li>
+<li>Logiciels
+  <ul>
+    <li><a href="sage.html">Sage</a></li>
+  </ul>
+</li>
+</ul>
+
+</div>
+
+<div id="contentwrapper">
+
+<div id="contentcolumn">
+
+<div class="outertube">
+<div id="rightcolumn">
+<div class="innertube">
+<div id="photo">
+</div>
+<h2>Coordonnées</h2>
+<p>
+Département d'informatique<br>
+Université du Québec à Montréal<br>
+CP 8888, Succ. Centre-ville<br>
+Montréal (Québec) H3C 3P8<br>
+Tél: 514-987-3000, #5516<br>
+Bureau: PK-4525<br>
+Courriel: blondin_masse[point]alexandre<br>
+[arobase]uqam[point]ca<br>
+</p>
+<h2>À propos</h2>
+<p>
+J'ai complété mon doctorat en mathématiques-informatique sous la supervision des professeurs <a href="http://lacim.uqam.ca/~brlek/">Srecko Brlek</a>, de l'Université du Québec à Montréal, au Canada, et de <a href="http://www.lama.univ-savoie.fr/~vuillon/">Laurent Vuillon</a>, de l'Université de Savoie, en France.
+</p>
+<p>
+Depuis le 1er août 2014, je suis professeur adjoint à l'Université du Québec à Montréal, au Canada.
+</p>
+<p>
+</p>
+<h2>Liens utiles</h2>
+<ul>
+  <li>Mon profil sur <a href="http://scholar.google.fr/citations?user=v8C9a9QAAAAJ&amp;hl=fr&amp;oi=ao">Google Scholar</a>
+</li>
+  <li>Mes dépôts <a href="https://gitlab.com/ablondin">GitLab</a>
+</li>
+  <li>Mes dépôts <a href="https://bitbucket.org/ablondin">Bitbucket</a>
+</li>
+  <li>Mes dépôts <a href="https://github.com/ablondin">Github</a>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+
+<h1 class="title">Programmation fonctionnelle et logique</h1>
+<div class="document" id="programmation-fonctionnelle-et-logique">
+
+
+<p>Bienvenue sur le site du cours Programmation fonctionnelle et logique - INF6120 que
+j'enseigne à l'automne 2019!</p>
+<div class="section" id="annonces">
+<h1>Annonces</h1>
+<dl class="docutils">
+<dt>20 novembre 2019</dt>
+<dd>
+<ul class="first last simple">
+<li>Ajout de l'énoncé du travail pratique 2</li>
+</ul>
+</dd>
+<dt>3 novembre 2019</dt>
+<dd>
+<ul class="first last simple">
+<li>Ajout de l'énoncé et de la solution de l'examen intra</li>
+</ul>
+</dd>
+<dt>21 octobre 2019</dt>
+<dd>
+<ul class="first last simple">
+<li>Mise à jour de l'échéancier</li>
+<li>Ajout des locaux pour l'examen intra: <strong>A-L</strong> (PK-R650), <strong>M-Z</strong> (SH-3340)</li>
+</ul>
+</dd>
+<dt>27 septembre 2019</dt>
+<dd>
+<ul class="first last simple">
+<li>Ajout de liens divers vers des ressources</li>
+</ul>
+</dd>
+<dt>20 août 2019</dt>
+<dd>
+<ul class="first last simple">
+<li>Activation du site</li>
+</ul>
+</dd>
+</dl>
+</div>
+<div class="section" id="documents-et-ressources">
+<h1>Documents et ressources</h1>
+<ul class="simple">
+<li><a class="reference external" href="https://ablondin.uqam.ca/files/inf6120/aut2019/plan.pdf">Plan de cours</a></li>
+<li><a class="reference external" href="https://gitlab.info.uqam.ca/inf6120-aut2019/diapos">Diapositives du cours</a></li>
+<li><a class="reference external" href="https://uqam.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=f196b5f3-26a6-4e69-92c2-aabe000113dd">Vidéos des cours</a></li>
+<li><a class="reference external" href="https://gitlab.info.uqam.ca/inf6120-aut2019/exercices">Énoncé des laboratoires</a></li>
+<li><a class="reference external" href="https://gitlab.info.uqam.ca/nyamen_tato.ange_adrienne/inf6120-automne2019">Solution des laboratoires</a></li>
+<li><a class="reference external" href="https://gitlab.info.uqam.ca/inf6120-aut2019">Groupe GitLab du cours</a></li>
+</ul>
+</div>
+<div class="section" id="examens">
+<h1>Examens</h1>
+<p>Intra:</p>
+<ul class="simple">
+<li><a class="reference external" href="https://ablondin.uqam.ca/files/inf6120/aut2019/intra-enonce.pdf">[énoncé]</a></li>
+<li><a class="reference external" href="https://ablondin.uqam.ca/files/inf6120/aut2019/intra-solution.pdf">[solution]</a></li>
+</ul>
+<p>Ancien final:</p>
+<ul class="simple">
+<li><a class="reference external" href="https://ablondin.uqam.ca/files/inf6120/aut2019/ancien-final-enonce.pdf">[énoncé]</a></li>
+<li><a class="reference external" href="https://ablondin.uqam.ca/files/inf6120/aut2019/ancien-final-solution.pdf">[solution]</a></li>
+</ul>
+</div>
+<div class="section" id="travaux-pratiques">
+<h1>Travaux pratiques</h1>
+<p>TP1:</p>
+<ul class="simple">
+<li><a class="reference external" href="https://gitlab.info.uqam.ca/inf6120-aut2019/inf6120-aut2019-tp1-enonce">[énoncé]</a></li>
+<li><a class="reference external" href="https://gitlab.info.uqam.ca/inf6120-aut2019/inf6120-aut2019-tp1">[dépôt]</a></li>
+<li><a class="reference external" href="https://gitlab.info.uqam.ca/inf6120-aut2019/inf6120-aut2019-tp1-solution">[solution]</a></li>
+</ul>
+<p>TP2:</p>
+<ul class="simple">
+<li><a class="reference external" href="https://gitlab.info.uqam.ca/inf6120-aut2019/inf6120-aut2019-tp2-enonce">[énoncé]</a></li>
+<li><a class="reference external" href="https://gitlab.info.uqam.ca/inf6120-aut2019/inf6120-aut2019-tp2">[dépôt]</a></li>
+</ul>
+</div>
+<div class="section" id="references">
+<h1>Références</h1>
+<p>Sur Haskell:</p>
+<table class="docutils footnote" frame="void" id="ghc" rules="none">
+<colgroup>
+<col class="label">
+<col>
+</colgroup>
+<tbody valign="top">
+<tr>
+<td class="label">[1]</td>
+<td>
+<a class="reference external" href="https://www.haskell.org/ghc/">GHC The Glasgow Haskell Compiler</a>. Le
+principal compilateur Haskell.</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="cabal" rules="none">
+<colgroup>
+<col class="label">
+<col>
+</colgroup>
+<tbody valign="top">
+<tr>
+<td class="label">[2]</td>
+<td>
+<a class="reference external" href="https://www.haskell.org/cabal/">Cabal, the Common Architecture for Building Applications and
+Libraries</a>, un système facilitant la
+distribution de bibliothèques Haskell.</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="stack" rules="none">
+<colgroup>
+<col class="label">
+<col>
+</colgroup>
+<tbody valign="top">
+<tr>
+<td class="label">[3]</td>
+<td>
+<a class="reference external" href="https://docs.haskellstack.org/en/stable/README/">The Haskell Tool Stack</a>, un outil de
+développement permettant de gérer l'installation et les dépendances.</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="haskell-platform" rules="none">
+<colgroup>
+<col class="label">
+<col>
+</colgroup>
+<tbody valign="top">
+<tr>
+<td class="label">[4]</td>
+<td>
+<a class="reference external" href="https://www.haskell.org/platform/">Haskell Platform</a>. Le compilateur GHC, les outils Cabal
+et Stack, tous en un.</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="haddock" rules="none">
+<colgroup>
+<col class="label">
+<col>
+</colgroup>
+<tbody valign="top">
+<tr>
+<td class="label">[5]</td>
+<td>
+<a class="reference external" href="https://www.haskell.org/haddock/">Haddock: A Haskell Documentation Tool</a>. Un logiciel permettant de générer de
+la documentation pour les programmes écrits en Haskell.</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="learn-you-haskell" rules="none">
+<colgroup>
+<col class="label">
+<col>
+</colgroup>
+<tbody valign="top">
+<tr>
+<td class="label">[6]</td>
+<td>
+<a class="reference external" href="http://learnyouahaskell.com/">Learn You a Haskell for a Great Good!</a>, par <em>Miran Lipovača</em>. La ressource
+principale pour la première partie du cours sur Haskell.</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="learn-you-haskell-fr" rules="none">
+<colgroup>
+<col class="label">
+<col>
+</colgroup>
+<tbody valign="top">
+<tr>
+<td class="label">[7]</td>
+<td>
+<a class="reference external" href="https://haskell.fr/lyah/">Apprendre Haskell vous fera le plus grand bien!</a>, par <em>Miran Lipovača</em>, traduit par <em>Valentin
+Robert</em>.</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="real-world-haskell" rules="none">
+<colgroup>
+<col class="label">
+<col>
+</colgroup>
+<tbody valign="top">
+<tr>
+<td class="label">[8]</td>
+<td>
+<a class="reference external" href="http://book.realworldhaskell.org/read/">Real World Haskell</a>, par <em>Bryan O’Sullivan</em>, <em>Don
+Stewart</em> et <em>John Goerzen</em>. L'approche est complémentaire et permet aux
+lecteurs de faire des commentaires.</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="data-structure-haskell" rules="none">
+<colgroup>
+<col class="label">
+<col>
+</colgroup>
+<tbody valign="top">
+<tr>
+<td class="label">[9]</td>
+<td>
+<a class="reference external" href="https://www.cs.cmu.edu/~rwh/theses/okasaki.pdf">Purely Functional Data Structure</a>, par <em>Chris Osaki</em>. Un
+classique sur la programmation fonctionnelle pure.</td>
+</tr>
+</tbody>
+</table>
+<p>Sur Prolog:</p>
+<table class="docutils footnote" frame="void" id="swi-prolog" rules="none">
+<colgroup>
+<col class="label">
+<col>
+</colgroup>
+<tbody valign="top">
+<tr>
+<td class="label">[10]</td>
+<td>
+<a class="reference external" href="http://www.swi-prolog.org/">SWI-Prolog</a>. Le principal
+compilateur Prolog libre disponible.</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="programming-prolog" rules="none">
+<colgroup>
+<col class="label">
+<col>
+</colgroup>
+<tbody valign="top">
+<tr>
+<td class="label">[11]</td>
+<td>
+<a class="reference external" href="http://www.dainf.cefetpr.br/~kaestner/Logica/MaterialAdicional/William%20F.%20Clocksin,%20Christopher%20S.%20Mellish-Programming%20in%20Prolog-Springer%20%282003%29.pdf">Programming in Prolog</a>,
+par <em>William F. Clocksin</em> et <em>Christopher S. Mellish</em>, Springer. La
+principale ressource pour la deuxième partie du cours sur Prolog. Disponible
+en ligne.</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="tutoriel-prolog" rules="none">
+<colgroup>
+<col class="label">
+<col>
+</colgroup>
+<tbody valign="top">
+<tr>
+<td class="label">[12]</td>
+<td>
+<a class="reference external" href="http://www.cs.ukzn.ac.za/~hughm/ai/readings/PrologIntro.pdf">Prolog, A tutorial Introduction</a>, par <em>James
+Lu</em> et <em>Jerud J. Mead</em>.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="contenu">
+<h1>Contenu</h1>
+<p>Le contenu abordé chaque semaine est détaillé dans le tableau ci-bas. Chaque
+cours magistral sera disponible sous format vidéo (à moins de problèmes
+techniques qui peuvent survenir pendant l'enregistrement).</p>
+<p>Je me réserve la possibilité d'apporter des modifications sans préavis.</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="15%">
+<col width="16%">
+<col width="69%">
+</colgroup>
+<thead valign="bottom">
+<tr>
+<th class="head">Semaine</th>
+<th class="head">Date</th>
+<th class="head">Contenu</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr>
+<td>1</td>
+<td>3 sept</td>
+<td>
+<p class="first">Introduction</p>
+<ul class="last simple">
+<li>Présentation du cours</li>
+<li>Paradigmes de programmation</li>
+<li>Rappels mathématiques</li>
+<li>Le langage Haskell</li>
+<li>Fonctions et types</li>
+<li>Listes et tuples</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>2</td>
+<td>10 sept</td>
+<td>
+<p class="first">Bases de Haskell</p>
+<ul class="last simple">
+<li>Types</li>
+<li>Classes</li>
+<li>Application et combinaison de fonctions</li>
+<li>Définitions de fonctions</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>3</td>
+<td>17 sept</td>
+<td>
+<p class="first">Bases de Haskell (suite)</p>
+<ul class="last simple">
+<li>Définitions de fonctions</li>
+<li>Fonctions d'ordre supérieur</li>
+<li>Exemple: le jeu 2048</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>4</td>
+<td>24 sept</td>
+<td>
+<p class="first">Types et foncteurs</p>
+<ul class="last simple">
+<li>Types algébriques</li>
+<li>Types récursifs</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>5</td>
+<td>1er oct</td>
+<td>
+<p class="first">Types et foncteurs</p>
+<ul class="simple">
+<li>Classes</li>
+<li>Foncteurs</li>
+</ul>
+<p>Modules</p>
+<ul class="last simple">
+<li>Généralités</li>
+<li>Installer un module</li>
+<li>Concevoir un module</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>6</td>
+<td>8 oct</td>
+<td>
+<p class="first">Modules (suite)</p>
+<ul class="simple">
+<li>Le module <span class="formula"><i>Data</i>.<i>Array</i></span>
+</li>
+<li>Le module <span class="formula"><i>Data</i>.<i>Foldable</i></span>
+</li>
+</ul>
+<p class="last"><strong>Quiz</strong></p>
+</td>
+</tr>
+<tr>
+<td>7</td>
+<td>15 oct</td>
+<td>
+<p class="first">Foncteurs applicatifs et monades</p>
+<ul class="last simple">
+<li>Foncteurs applicatifs</li>
+<li>Lois</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>8</td>
+<td>22 oct</td>
+<td>
+<p class="first">Foncteurs applicatifs et monades (suite)</p>
+<ul class="last simple">
+<li>Lois</li>
+<li>Entrées et sorties</li>
+<li>Monades</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>9</td>
+<td>29 oct</td>
+<td><strong>Examen intra</strong></td>
+</tr>
+<tr>
+<td>10</td>
+<td>5 nov</td>
+<td> </td>
+</tr>
+<tr>
+<td>11</td>
+<td>12 nov</td>
+<td> </td>
+</tr>
+<tr>
+<td>12</td>
+<td>19 nov</td>
+<td> </td>
+</tr>
+<tr>
+<td>13</td>
+<td>26 nov</td>
+<td> </td>
+</tr>
+<tr>
+<td>14</td>
+<td>3 déc</td>
+<td> </td>
+</tr>
+<tr>
+<td>15</td>
+<td>10 déc</td>
+<td><strong>Examen final</strong></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+
+<div id="footer">
+<hr class="text-only">
+This site is
+generated by <a href="http://github.com/sylvainhalle/FantasticWindmill">Fantastic Windmill</a>.
+</div>
+
+</div>
+
+<!--
+You are viewing a page using the LOCAL version of the site
+-->
+
+
+</body>
+</html>

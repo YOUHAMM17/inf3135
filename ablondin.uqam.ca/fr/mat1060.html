@@ -1,0 +1,507 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!-- MathJax  --><html>
+<head>
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+<!-- Sage Single Cell Server -->
+<script type="text/javascript" src="https://sagecell.sagemath.org/static/jquery.min.js"></script>
+<script type="text/javascript" src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script>
+<script type="text/javascript">
+    $(function () {
+    // Make the div with id 'mycell' a Sage cell
+    sagecell.makeSagecell({inputLocation:  '#mycell',
+                           template:       sagecell.templates.minimal,
+                           evalButtonText: 'Activate'});
+    // Make *any* div with class 'compute' a Sage cell
+    sagecell.makeSagecell({inputLocation: 'div.compute',
+                           evalButtonText: 'Evaluate'});
+    });
+</script>
+
+
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Mathématiques algorithmiques - Homepage of Alexandre Blondin Massé</title>
+<link rel="stylesheet" type="text/css" media="screen" href="../css/screen.css">
+<meta name="author" content="Alexandre Blondin Massé">
+
+
+</head>
+<body>
+
+<div id="maincontainer">
+
+<div id="topsection"></div>
+
+<div id="menu">
+<ul id="navigation">
+<li><a href="https://ablondin.uqam.ca/index">Accueil</a></li>
+<li><a href="https://ablondin.uqam.ca/posts/fr/blogue">Blogue</a></li>
+<li>Recherche
+  <ul>
+    <li><a href="publications.html">Publications</a></li>
+    <li><a href="etudiants.html">Étudiants</a></li>
+    <li><a href="combinatoire.html">Combinatoire</a></li>
+    <li><a href="dictionnaires.html">Dictionnaires</a></li>
+  </ul>
+</li>
+<li>Enseignement
+  <ul>
+    <li><a href="inf1070.html">INF1070 Utilisation et administration des systèmes informatiques</a></li>
+    <li><a href="inf1130.html">INF1130 Mathématiques pour informaticiens</a></li>
+    <li><a href="inf3135.html">INF3135 Construction et maintenance de logiciels</a></li>
+    <li><a href="inf5071.html">INF5071 Infographie</a></li>
+    <li><a href="inf6120.html">INF6120 Programmation fonctionnelle et logique</a></li>
+    <li><a href="inf7341.html">INF7341 Structures de données</a></li>
+    <li><a href="inf7440.html">INF7440 Conception et analyse d'algorithmes</a></li>
+    <li><a href="inf889b.html">INF889B Algorithmes d'optimisation combinatoire</a></li>
+    <li><a href="mat1060.html">MAT1060 Mathématiques algorithmiques</a></li>
+    <li><a href="https://ablondin.uqam.ca/es/8mqg210">8MQG210 Modelado de sistemas aleatorios</a></li>
+  </ul>
+</li>
+<li>Logiciels
+  <ul>
+    <li><a href="sage.html">Sage</a></li>
+  </ul>
+</li>
+</ul>
+
+</div>
+
+<div id="contentwrapper">
+
+<div id="contentcolumn">
+
+<div class="outertube">
+<div id="rightcolumn">
+<div class="innertube">
+<div id="photo">
+</div>
+<h2>Coordonnées</h2>
+<p>
+Département d'informatique<br>
+Université du Québec à Montréal<br>
+CP 8888, Succ. Centre-ville<br>
+Montréal (Québec) H3C 3P8<br>
+Tél: 514-987-3000, #5516<br>
+Bureau: PK-4525<br>
+Courriel: blondin_masse[point]alexandre<br>
+[arobase]uqam[point]ca<br>
+</p>
+<h2>À propos</h2>
+<p>
+J'ai complété mon doctorat en mathématiques-informatique sous la supervision des professeurs <a href="http://lacim.uqam.ca/~brlek/">Srecko Brlek</a>, de l'Université du Québec à Montréal, au Canada, et de <a href="http://www.lama.univ-savoie.fr/~vuillon/">Laurent Vuillon</a>, de l'Université de Savoie, en France.
+</p>
+<p>
+Depuis le 1er août 2014, je suis professeur adjoint à l'Université du Québec à Montréal, au Canada.
+</p>
+<p>
+</p>
+<h2>Liens utiles</h2>
+<ul>
+  <li>Mon profil sur <a href="http://scholar.google.fr/citations?user=v8C9a9QAAAAJ&amp;hl=fr&amp;oi=ao">Google Scholar</a>
+</li>
+  <li>Mes dépôts <a href="https://gitlab.com/ablondin">GitLab</a>
+</li>
+  <li>Mes dépôts <a href="https://bitbucket.org/ablondin">Bitbucket</a>
+</li>
+  <li>Mes dépôts <a href="https://github.com/ablondin">Github</a>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+
+<h1 class="title">Mathématiques algorithmiques</h1>
+<div class="document" id="mathematiques-algorithmiques">
+
+
+<p>Bienvenue sur le site du cours Mathématiques algorithmiques - MAT1060 que
+j'enseigne à l'hiver 2017</p>
+<div class="section" id="annonces">
+<h1>Annonces</h1>
+<dl class="docutils">
+<dt>7 mai 2017</dt>
+<dd>
+<ul class="first last simple">
+<li>Ajout de la solution de l'examen 3</li>
+</ul>
+</dd>
+<dt>26 avril 2017</dt>
+<dd>
+<ul class="first last simple">
+<li>Ajout de la solution du devoir 3</li>
+</ul>
+</dd>
+<dt>17 avril 2017</dt>
+<dd>
+<ul class="first last simple">
+<li>Correction à la question 4 du devoir 3</li>
+</ul>
+</dd>
+<dt>13 avril 2017</dt>
+<dd>
+<ul class="first last simple">
+<li>Ajout des diapositives des deux derniers cours</li>
+<li>Corrections mineures dans l'énoncé du devoir 3</li>
+</ul>
+</dd>
+<dt>4 avril 2017</dt>
+<dd>
+<ul class="first last simple">
+<li>Ajout des exercices des démos 10 et 11</li>
+</ul>
+</dd>
+<dt>3 avril 2017</dt>
+<dd>
+<ul class="first last simple">
+<li>Ajout de la démonstration 4</li>
+<li>Ajout de l'énoncé du devoir 3</li>
+</ul>
+</dd>
+<dt>2 avril 2017</dt>
+<dd>
+<ul class="first last simple">
+<li>Ajout de la solution des examens 1 et 2</li>
+</ul>
+</dd>
+<dt>27 mars 2017</dt>
+<dd>
+<ul class="first last simple">
+<li>Ajout de la solution du devoir 2</li>
+</ul>
+</dd>
+<dt>17 mars 2017</dt>
+<dd>
+<ul class="first last simple">
+<li>Ajout des solutions aux algorithmes récursifs donnés en exercices</li>
+</ul>
+</dd>
+<dt>15 mars 2017</dt>
+<dd>
+<ul class="first last simple">
+<li>Ajout des exercices des démos 8 et 9</li>
+</ul>
+</dd>
+<dt>5 mars 2017</dt>
+<dd>
+<ul class="first last simple">
+<li>Ajout des exercices de la démo 7</li>
+</ul>
+</dd>
+<dt>1er mars 2017</dt>
+<dd>
+<ul class="first last simple">
+<li>Ajout de l'énoncé du devoir 2</li>
+</ul>
+</dd>
+<dt>19 février 2017</dt>
+<dd>
+<ul class="first last simple">
+<li>Ajout des exercices des démos 5 et 6</li>
+</ul>
+</dd>
+<dt>13 février 2017</dt>
+<dd>
+<ul class="first last simple">
+<li>Ajout de la solution du devoir 1</li>
+</ul>
+</dd>
+<dt>25 janvier 2017</dt>
+<dd>
+<ul class="first last simple">
+<li>Ajout de la démonstration 3</li>
+</ul>
+</dd>
+<dt>23 janvier 2017</dt>
+<dd>
+<ul class="first last simple">
+<li>Ajout de la démonstration 2</li>
+<li>Ajout des exercices des démos 2 à 4</li>
+</ul>
+</dd>
+<dt>16 janvier 2017</dt>
+<dd>
+<ul class="first last simple">
+<li>Ajout des exercices de la démo 1</li>
+</ul>
+</dd>
+<dt>11 janvier 2017</dt>
+<dd>
+<ul class="first last simple">
+<li>Ajout de l'énoncé du devoir 1</li>
+<li>Ajout de la démonstration 1</li>
+<li>Mise à jour du plan de cours</li>
+</ul>
+</dd>
+<dt>9 janvier 2017</dt>
+<dd>
+<ul class="first last simple">
+<li>Activation du site</li>
+</ul>
+</dd>
+</dl>
+</div>
+<div class="section" id="demonstrations-avec-sagemath">
+<h1>Démonstrations avec SageMath</h1>
+<p>À l'occasion, pendant le cours, j'effectuerai des démonstrations de
+l'utilisation du logiciel <a class="reference external" href="http://www.sagemath.org/">SageMath</a>. Les vidéos
+de ces démonstrations seront alors disponibles sur Moodle, dans le panneau de
+droite, dans le bloc "Panopto focus".</p>
+<ul class="simple">
+<li>Démonstration 1 : Introduction à Sagemath
+<a class="reference external" href="https://uqam.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=7da96125-bc4a-4d1b-8b1d-b58323820914">[vidéo]</a>
+<a class="reference external" href="https://cloud.sagemath.com/projects/b48ca81c-23cc-4a0d-8c79-d7cf0bb29018/files/01%20Nombre%20de%20r%C3%A9gions%20d'une%20image.sagews">[code]</a>
+</li>
+<li>Démonstration 2 : Ensembles et fonctions
+<a class="reference external" href="https://uqam.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=77b02850-c0f5-490f-9cb6-a3cd315724f6">[vidéo]</a>
+<a class="reference external" href="https://cloud.sagemath.com/projects/b48ca81c-23cc-4a0d-8c79-d7cf0bb29018/files/02%20Ensembles%20et%20fonctions.sagews">[code]</a>
+</li>
+<li>Démonstration 3 : Fonctions, suites et matrices
+<a class="reference external" href="https://uqam.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=58d6220b-26b6-47db-9f97-71a15412a617">[vidéo]</a>
+<a class="reference external" href="https://cloud.sagemath.com/projects/b48ca81c-23cc-4a0d-8c79-d7cf0bb29018/files/03%20Fonctions,%20suites%20et%20matrices.sagews">[code]</a>
+</li>
+<li>Démonstration 4 : Générateurs
+<a class="reference external" href="https://uqam.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=622c3605-633f-4076-a395-f6bf1f5ad332">[vidéo]</a>
+<a class="reference external" href="https://ablondin.uqam.ca/files/mat1060/hiv2017/generateur.py">[code]</a>
+</li>
+</ul>
+</div>
+<div class="section" id="documents">
+<h1>Documents</h1>
+<ul class="simple">
+<li><a class="reference external" href="https://ablondin.uqam.ca/files/mat1060/hiv2017/plan.pdf">Plan de cours</a></li>
+<li><a class="reference external" href="https://ablondin.uqam.ca/files/mat1060/hiv2017/exercices.pdf">Exercices</a></li>
+<li><a class="reference external" href="https://ablondin.uqam.ca/files/mat1060/hiv2017/solutions-algos-recursifs.pdf">Algorithmes récursifs</a></li>
+<li><a class="reference external" href="https://ablondin.uqam.ca/files/mat1060/hiv2017/graphes-orientes.pdf">Graphes orientés</a></li>
+<li><a class="reference external" href="https://ablondin.uqam.ca/files/mat1060/hiv2017/graphes-simples.pdf">Graphes simples</a></li>
+</ul>
+</div>
+<div class="section" id="examens">
+<h1>Examens</h1>
+<ul class="simple">
+<li>Examen 1
+<a class="reference external" href="https://ablondin.uqam.ca/files/mat1060/hiv2017/examen1.pdf">[énoncé]</a>
+<a class="reference external" href="https://ablondin.uqam.ca/files/mat1060/hiv2017/solution-examen1.pdf">[solution]</a>
+</li>
+<li>Examen 2
+<a class="reference external" href="https://ablondin.uqam.ca/files/mat1060/hiv2017/examen2.pdf">[énoncé]</a>
+<a class="reference external" href="https://ablondin.uqam.ca/files/mat1060/hiv2017/solution-examen2.pdf">[solution]</a>
+</li>
+<li>Examen 3
+<a class="reference external" href="https://ablondin.uqam.ca/files/mat1060/hiv2017/examen3.pdf">[énoncé]</a>
+<a class="reference external" href="https://ablondin.uqam.ca/files/mat1060/hiv2017/solution-examen3.pdf">[solution]</a>
+</li>
+</ul>
+</div>
+<div class="section" id="devoirs">
+<h1>Devoirs</h1>
+<p>Tous les devoirs doivent être rédigés <strong>individuellement</strong>. Le code source des
+énoncés des devoirs est également disponible si vous souhaitez apprendre à
+rédiger en LaTeX. Vous pouvez alors directement y inclure votre solution.</p>
+<ul class="simple">
+<li>Devoir 1
+<a class="reference external" href="https://ablondin.uqam.ca/files/mat1060/hiv2017/devoir1.pdf">[énoncé]</a>
+<a class="reference external" href="https://ablondin.uqam.ca/files/mat1060/hiv2017/template-devoir1.tex">[template]</a>
+<a class="reference external" href="https://ablondin.uqam.ca/files/mat1060/hiv2017/solution-devoir1.pdf">[solution]</a>
+</li>
+<li>Devoir 2
+<a class="reference external" href="https://ablondin.uqam.ca/files/mat1060/hiv2017/devoir2.pdf">[énoncé]</a>
+<a class="reference external" href="https://ablondin.uqam.ca/files/mat1060/hiv2017/template-devoir2.tex">[template]</a>
+<a class="reference external" href="https://ablondin.uqam.ca/files/mat1060/hiv2017/solution-devoir2.pdf">[solution]</a>
+</li>
+<li>Devoir 3
+<a class="reference external" href="https://ablondin.uqam.ca/files/mat1060/hiv2017/devoir3.pdf">[énoncé]</a>
+<a class="reference external" href="https://ablondin.uqam.ca/files/mat1060/hiv2017/template-devoir3.tex">[template]</a>
+<a class="reference external" href="https://ablondin.uqam.ca/files/mat1060/hiv2017/solution-devoir3.pdf">[solution]</a>
+</li>
+</ul>
+</div>
+<div class="section" id="echeancier">
+<h1>Échéancier</h1>
+<p>Le tableau ci-bas donne un aperçu de la matière abordée à chaque cours.</p>
+<p><strong>Remarque :</strong> Je me réserve la possibilité de modifier les sujets abordés au
+fur et à mesure que le trimestre avance, par exemple si certaines notions
+demandent plus de temps que prévu.</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="16%">
+<col width="18%">
+<col width="66%">
+</colgroup>
+<thead valign="bottom">
+<tr>
+<th class="head">Semaine</th>
+<th class="head">Date</th>
+<th class="head">Contenu</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr>
+<td rowspan="2">1</td>
+<td>9 janv</td>
+<td>Présentation du plan de cours,
+introduction</td>
+</tr>
+<tr>
+<td>11 janv</td>
+<td>Ensembles</td>
+</tr>
+<tr>
+<td rowspan="2">2</td>
+<td>16 janv</td>
+<td>Ensembles (suite)</td>
+</tr>
+<tr>
+<td>18 janv</td>
+<td>Fonctions</td>
+</tr>
+<tr>
+<td rowspan="2">3</td>
+<td>23 janv</td>
+<td>Suites</td>
+</tr>
+<tr>
+<td>25 janv</td>
+<td>Matrices</td>
+</tr>
+<tr>
+<td rowspan="2">4</td>
+<td>30 janv</td>
+<td>Algorithmes</td>
+</tr>
+<tr>
+<td>1er fév</td>
+<td>Asymptotique</td>
+</tr>
+<tr>
+<td rowspan="2">5</td>
+<td>6 fév</td>
+<td>Analyse de complexité</td>
+</tr>
+<tr>
+<td>8 fév</td>
+<td>Structures de données</td>
+</tr>
+<tr>
+<td rowspan="2">6</td>
+<td>13 fév</td>
+<td>Révision</td>
+</tr>
+<tr>
+<td>15 fév</td>
+<td><strong>Examen 1</strong></td>
+</tr>
+<tr>
+<td rowspan="2">7</td>
+<td>20 fév</td>
+<td>Définitions récursives</td>
+</tr>
+<tr>
+<td>22 fév</td>
+<td>Algorithmes récursifs</td>
+</tr>
+<tr>
+<td rowspan="2">8</td>
+<td>27 fév</td>
+<td rowspan="2">Pas de cours (semaine de relâche)</td>
+</tr>
+<tr>
+<td>1er mars</td>
+</tr>
+<tr>
+<td rowspan="2">9</td>
+<td>6 mars</td>
+<td>Récurrences linéaires</td>
+</tr>
+<tr>
+<td>8 mars</td>
+<td>Induction</td>
+</tr>
+<tr>
+<td rowspan="2">10</td>
+<td>13 mars</td>
+<td>Dénombrement</td>
+</tr>
+<tr>
+<td>15 mars</td>
+<td>Pas de cours (tempête de neige)</td>
+</tr>
+<tr>
+<td rowspan="2">11</td>
+<td>20 mars</td>
+<td>Dénombrement (suite)</td>
+</tr>
+<tr>
+<td>22 mars</td>
+<td>Arguments combinatoires</td>
+</tr>
+<tr>
+<td rowspan="2">12</td>
+<td>27 mars</td>
+<td>Révision</td>
+</tr>
+<tr>
+<td>29 mars</td>
+<td><strong>Examen 2</strong></td>
+</tr>
+<tr>
+<td rowspan="2">13</td>
+<td>3 avr</td>
+<td>Générateurs</td>
+</tr>
+<tr>
+<td>5 avr</td>
+<td>Relations</td>
+</tr>
+<tr>
+<td rowspan="2">14</td>
+<td>10 avr</td>
+<td>Relations (suite)</td>
+</tr>
+<tr>
+<td>12 avr</td>
+<td>Graphes</td>
+</tr>
+<tr>
+<td rowspan="2">15</td>
+<td>17 avr</td>
+<td>Pas de cours (Pâques)</td>
+</tr>
+<tr>
+<td>19 avr</td>
+<td>Graphes (suite)</td>
+</tr>
+<tr>
+<td rowspan="2">16</td>
+<td>24 avr</td>
+<td>Révision</td>
+</tr>
+<tr>
+<td>26 avr</td>
+<td><strong>Examen final</strong></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+
+<div id="footer">
+<hr class="text-only">
+This site is
+generated by <a href="http://github.com/sylvainhalle/FantasticWindmill">Fantastic Windmill</a>.
+</div>
+
+</div>
+
+<!--
+You are viewing a page using the LOCAL version of the site
+-->
+
+
+</body>
+</html>

@@ -1,0 +1,435 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!-- MathJax  --><html>
+<head>
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+<!-- Sage Single Cell Server -->
+<script type="text/javascript" src="https://sagecell.sagemath.org/static/jquery.min.js"></script>
+<script type="text/javascript" src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script>
+<script type="text/javascript">
+    $(function () {
+    // Make the div with id 'mycell' a Sage cell
+    sagecell.makeSagecell({inputLocation:  '#mycell',
+                           template:       sagecell.templates.minimal,
+                           evalButtonText: 'Activate'});
+    // Make *any* div with class 'compute' a Sage cell
+    sagecell.makeSagecell({inputLocation: 'div.compute',
+                           evalButtonText: 'Evaluate'});
+    });
+</script>
+
+
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Sage - Homepage of Alexandre Blondin Massé</title>
+<link rel="stylesheet" type="text/css" media="screen" href="../css/screen.css">
+<meta name="author" content="Alexandre Blondin Massé">
+
+
+</head>
+<body>
+
+<div id="maincontainer">
+
+<div id="topsection"></div>
+
+<div id="menu">
+<ul id="navigation">
+<li><a href="https://ablondin.uqam.ca/index">Accueil</a></li>
+<li><a href="https://ablondin.uqam.ca/posts/fr/blogue">Blogue</a></li>
+<li>Recherche
+  <ul>
+    <li><a href="publications.html">Publications</a></li>
+    <li><a href="etudiants.html">Étudiants</a></li>
+    <li><a href="combinatoire.html">Combinatoire</a></li>
+    <li><a href="dictionnaires.html">Dictionnaires</a></li>
+  </ul>
+</li>
+<li>Enseignement
+  <ul>
+    <li><a href="inf1070.html">INF1070 Utilisation et administration des systèmes informatiques</a></li>
+    <li><a href="inf1130.html">INF1130 Mathématiques pour informaticiens</a></li>
+    <li><a href="inf3135.html">INF3135 Construction et maintenance de logiciels</a></li>
+    <li><a href="inf5071.html">INF5071 Infographie</a></li>
+    <li><a href="inf6120.html">INF6120 Programmation fonctionnelle et logique</a></li>
+    <li><a href="inf7341.html">INF7341 Structures de données</a></li>
+    <li><a href="inf7440.html">INF7440 Conception et analyse d'algorithmes</a></li>
+    <li><a href="inf889b.html">INF889B Algorithmes d'optimisation combinatoire</a></li>
+    <li><a href="mat1060.html">MAT1060 Mathématiques algorithmiques</a></li>
+    <li><a href="https://ablondin.uqam.ca/es/8mqg210">8MQG210 Modelado de sistemas aleatorios</a></li>
+  </ul>
+</li>
+<li>Logiciels
+  <ul>
+    <li><a href="sage.html">Sage</a></li>
+  </ul>
+</li>
+</ul>
+
+</div>
+
+<div id="contentwrapper">
+
+<div id="contentcolumn">
+
+<div class="outertube">
+<div id="rightcolumn">
+<div class="innertube">
+<div id="photo">
+</div>
+<h2>Coordonnées</h2>
+<p>
+Département d'informatique<br>
+Université du Québec à Montréal<br>
+CP 8888, Succ. Centre-ville<br>
+Montréal (Québec) H3C 3P8<br>
+Tél: 514-987-3000, #5516<br>
+Bureau: PK-4525<br>
+Courriel: blondin_masse[point]alexandre<br>
+[arobase]uqam[point]ca<br>
+</p>
+<h2>À propos</h2>
+<p>
+J'ai complété mon doctorat en mathématiques-informatique sous la supervision des professeurs <a href="http://lacim.uqam.ca/~brlek/">Srecko Brlek</a>, de l'Université du Québec à Montréal, au Canada, et de <a href="http://www.lama.univ-savoie.fr/~vuillon/">Laurent Vuillon</a>, de l'Université de Savoie, en France.
+</p>
+<p>
+Depuis le 1er août 2014, je suis professeur adjoint à l'Université du Québec à Montréal, au Canada.
+</p>
+<p>
+</p>
+<h2>Liens utiles</h2>
+<ul>
+  <li>Mon profil sur <a href="http://scholar.google.fr/citations?user=v8C9a9QAAAAJ&amp;hl=fr&amp;oi=ao">Google Scholar</a>
+</li>
+  <li>Mes dépôts <a href="https://gitlab.com/ablondin">GitLab</a>
+</li>
+  <li>Mes dépôts <a href="https://bitbucket.org/ablondin">Bitbucket</a>
+</li>
+  <li>Mes dépôts <a href="https://github.com/ablondin">Github</a>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+
+<h1 class="title">Sage</h1>
+<span class="langlink en"><a href="https://ablondin.uqam.ca/en/sage.html">[english]</a></span>
+<div class="document" id="sage">
+
+
+<p>Tel que mentionné sur la page d'accueil, <a class="reference external" href="http://www.sagemath.org">Sage</a> est
+un logiciel mathématique gratuit et open-source sous licence GPL. Son objectif
+principal est de créer une alternative viable, gratuite et open-source aux
+logiciels mathématiques Magma, Maple, Mathematica et Matlab. Vous pouvez
+observer plus bas une animation créée par Sébastien Labbé et Xavier Provençal à
+l'aide de Sage :</p>
+<div class="figure">
+<img alt="Le lion et le cerf" src="../images/tamer.gif" style="width: 273px;">
+<p class="caption">Le lion et le cerf</p>
+</div>
+<p>Au cours de l'été 2008, Arnaud Bergeron, Amy Glen, Sébastien Labbé et Franco
+Saliola ont créé la version initiale de la bibliothèque sur les mots incluse
+dans Sage. L'année suivante, Sébastien et Franco ont considérablement amélioré
+le design et l'architecture de cette bibliothèque afin d'en simplifier de
+nombreux aspects. Notons qu'il est possible de manipuler des mots infinis et
+d'extraire plusieurs informations importantes sur les mots. D'autre part, il
+est toujours possible d'améliorer davantage cette bibliothèque et quiconque est
+intéressé à contribuer est bienvenu.</p>
+<p>Jusqu'à maintenant, j'ai été impliqué autant à titre d'auteur que d'arbitre
+dans des tickets liés à la théorie des graphes et la combinatoire des mots.</p>
+<ul class="simple">
+<li>Si vous souhaitez avoir plus de détail à propos de mes contributions
+personnelles, je vous invite à cliquer <a class="reference external" href="http://trac.sagemath.org/search?q=abmasse">ici</a>;</li>
+<li>
+<em>Cours d'introduction à Sage</em> présenté au Collège d'Ahuntsic;</li>
+<li>Le 1er septembre 2010, j'ai été un des trois organisateurs de la <a class="reference external" href="http://wiki.sagemath.org/days25.5">Journée
+Sage 25.5</a>;</li>
+<li>En collaboration avec Sébastien Labbé et Franco Saliola, j'ai été en charge
+de l'organisation des <a class="reference external" href="http://wiki.sagemath.org/LaCIMSageFridays">Vendredis Sage du LaCIM</a> à l'automne 2010 et l'hiver
+2011.</li>
+</ul>
+<div class="section" id="sage-en-ligne">
+<h1>Sage en ligne</h1>
+<p>Grâce à Jason Grout (Drake University, Iowa), vous pouvez utiliser Sage ici
+sans installation supplémentaire ! <strong>Attention :</strong> Ne fonctionne pas bien sous
+Internet Explorer et Google Chrome, utiliser plutôt Mozilla Firefox.</p>
+<div class="compute"><script type="text/x-sage">
+from sage.plot.plot3d.parametric_surface import ParametricSurface
+def r(u,v):
+    return (2 + sin(v)) * cos(u), (2 + sin(v)) * sin(u), u + cos(v)
+P = ParametricSurface(r, (srange(0,4*pi,0.1), srange(0,2*pi,0.1)))
+show(P)
+</script></div>
+</div>
+<div class="section" id="juin-2010-college-ahuntsic">
+<h1>3 juin 2010 : Collège Ahuntsic</h1>
+<p>Vous trouverez ci-bas différentes informations et matériel utilisé dans le
+cadre d'une formation que j'ai dispensées sur le logiciel Sage aux enseignants
+du département de mathématiques le 3 juin 2010.</p>
+<div class="section" id="horaire">
+<h2>Horaire</h2>
+<table border="1" class="docutils">
+<colgroup>
+<col width="22%">
+<col width="78%">
+</colgroup>
+<tbody valign="top">
+<tr>
+<td>Durée</td>
+<td>Description</td>
+</tr>
+<tr>
+<td>10:00-10:20</td>
+<td>Présentation de Sage</td>
+</tr>
+<tr>
+<td>10:20-10:50</td>
+<td>Utilisons Sage ! Et comment obtenir de l'aide</td>
+</tr>
+<tr>
+<td>10:50-11:20</td>
+<td>Statistiques</td>
+</tr>
+<tr>
+<td>11:20-11:30</td>
+<td>Pause</td>
+</tr>
+<tr>
+<td>11:30-12:00</td>
+<td>Fonctions, limites, dérivation et intégration</td>
+</tr>
+<tr>
+<td>12:00-12:30</td>
+<td>Matrices et vecteurs</td>
+</tr>
+<tr>
+<td>12:30-13:00</td>
+<td>Automatisation de devoirs et d'examens</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="references-et-ressources">
+<h2>Références et ressources</h2>
+<ul>
+<li>
+<p class="first"><em>Site officiel</em>.</p>
+<dl class="docutils">
+<dt>En anglais :</dt>
+<dd>
+<p class="first last"><a class="reference external" href="http://www.sagemath.org">http://www.sagemath.org</a></p>
+</dd>
+<dt>En français :</dt>
+<dd>
+<p class="first last"><a class="reference external" href="http://www.sagemath.fr">http://www.sagemath.fr</a></p>
+</dd>
+</dl>
+</li>
+<li>
+<p class="first"><em>Tutoriel</em>.</p>
+<dl class="docutils">
+<dt>En anglais :</dt>
+<dd>
+<p class="first last"><a class="reference external" href="http://www.sagemath.org/doc/tutorial/index.html">http://www.sagemath.org/doc/tutorial/index.html</a></p>
+</dd>
+<dt>En français :</dt>
+<dd>
+<p class="first last"><a class="reference external" href="http://www.sagemath.org/fr/html/tutorial/">http://www.sagemath.org/fr/html/tutorial/</a></p>
+</dd>
+</dl>
+</li>
+<li>
+<p class="first"><em>Calcul intégral et différentiel</em>. Directement intégré dans Sage, en grande
+partie basé sur Maxima et Sympy.</p>
+<dl class="docutils">
+<dt>Tutoriel en anglais :</dt>
+<dd>
+<p class="first last"><a class="reference external" href="http://www.sagemath.org/calctut">http://www.sagemath.org/calctut</a></p>
+</dd>
+</dl>
+</li>
+<li>
+<p class="first"><em>Algèbre linéaire et vectoriel</em>. Directement intégré dans Sage, en grande
+partie basé sur Linbox, IML, GSL, Scipy et Numpy.</p>
+<dl class="docutils">
+<dt>Tutoriel en anglais <span class="classifier-delimiter">:</span> <span class="classifier">&lt;a</span>
+</dt>
+<dd>
+<p class="first last"><a class="reference external" href="http://www.sagemath.org/doc/tutorial/tour_linalg.html">http://www.sagemath.org/doc/tutorial/tour_linalg.html</a></p>
+</dd>
+</dl>
+</li>
+<li>
+<p class="first"><em>Probabilités et statistiques</em>. Statistiques de base : moyenne, médiane,
+écart-type, etc. Aussi disponible en utilisant l'objet TimeSeries, efficace
+pour les nombres réels.</p>
+<dl class="docutils">
+<dt>Scipy :</dt>
+<dd>
+<p class="first last"><a class="reference external" href="http://www.scipy.org">http://www.scipy.org</a> (utiliser la commande <tt class="docutils literal">import scipy.stats</tt>)</p>
+</dd>
+<dt>R :</dt>
+<dd>
+<p class="first last"><a class="reference external" href="http://www.r-project.org/">http://www.r-project.org/</a> (la référence en logiciel statistique libre et
+gratuit)</p>
+</dd>
+</dl>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="aout-2012-universite-de-trois-rivieres">
+<h1>21-22 août 2012: Université de Trois-Rivières</h1>
+<p>Bienvenue sur la page des Journées Sage qui se dérouleront à l'Université du
+Québec à Trois-Rivières les 21 et 22 août 2012. Vous trouverez plus bas
+l'horaire et différentes ressources en rapport avec l'événement. <a class="reference external" href="http://sagemath.org/">Sage</a> est un système logiciel mathématique libre et
+open-source sous license GPL. Sa mission principale est d'offrir une
+alternative viable et libre aux logiciels propriétaires Magma, Maple,
+Mathematica et Matlab.</p>
+<p>La doyenne de la recherche de l'UQTR, madame Nicole Bouchard, présentera un mot
+de bienvenue aux participants. Il y a également un 5 à 7 qui est prévu le
+mercredi 22 août pour clôturer l'événement.</p>
+<div class="section" id="organisateurs">
+<h2>Organisateurs</h2>
+<ul class="simple">
+<li>Alain Goupil, professeur au <a class="reference external" href="https://oraprdnt.uqtr.uquebec.ca/pls/public/gscw030?owa_no_site=1507">département de mathématiques et d'informatique</a>, à
+l'<a class="reference external" href="http://www.uqtr.ca/">Université du Québec à Trois-Rivières</a>
+</li>
+<li>Alexandre Blondin Massé, professeur au <a class="reference external" href="http://wordpress.uqac.ca/~dim/">département d'informatique et
+mathématique</a>, à l'<a class="reference external" href="http://www.uqac.ca/">Université du Québec à
+Chicoutimi</a>
+</li>
+</ul>
+</div>
+<div class="section" id="inscription">
+<h2>Inscription</h2>
+<p>L'inscription est gratuite, mais vous devez remplir <a class="reference external" href="https://docs.google.com/spreadsheet/embeddedform?formkey=dGl2X0p0ODRoRERwd1V0anlqRVo4Wnc6MQ">ce formulaire</a>
+pour nous aider à préparer adéquatement l'événement.</p>
+</div>
+<div class="section" id="id1">
+<h2>Horaire</h2>
+<p>Les deux journées se dérouleront au Pavillon Ringuet, local 3038.  L'horaire
+est sujet à changement.</p>
+<p>Des pauses de quelques minutes seront prises entre les périodes consécutives.</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="14%">
+<col width="39%">
+<col width="47%">
+</colgroup>
+<tbody valign="top">
+<tr>
+<td> </td>
+<td>21 août</td>
+<td>22 août</td>
+</tr>
+<tr>
+<td>08:45-09:00</td>
+<td>Accueil des participants, mot de
+bienvenue par Nicole Bouchard,
+doyenne de la recherche à l'UQTR</td>
+<td> </td>
+</tr>
+<tr>
+<td>09:00-10:00</td>
+<td>Tour de table, introduction à Sage
+Tour de table, introduction à Sage</td>
+<td>Retour sur la première journée :
+interact et animate</td>
+</tr>
+<tr>
+<td>10:00-11:00</td>
+<td>Installation du logiciel</td>
+<td>Tutoriel 4 : Les itérateurs</td>
+</tr>
+<tr>
+<td>11:00-12:00</td>
+<td>Tutoriel 1 : Le Sage notebook</td>
+<td>LaTeX, TikZ, Beamer, pgfplots et Sagetex</td>
+</tr>
+<tr>
+<td>12:00-14:00</td>
+<td>Pause pour le dîner</td>
+<td>Pause pour le dîner</td>
+</tr>
+<tr>
+<td>14:00-15:20</td>
+<td>Tutoriel 2 : Fonctions, calcul,
+dessin, interact, animate</td>
+<td>Tutoriel 5 : Programmation orientée objet</td>
+</tr>
+<tr>
+<td>15:30-17:00</td>
+<td>Tutoriel 3 : Programmer en Python</td>
+<td>Tutoriel 6 : Cython</td>
+</tr>
+<tr>
+<td>17:00-19:00</td>
+<td> </td>
+<td>5 à 7 au bistrot près de la cafétéria
+de l'UQTR</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="ressources-supplementaires">
+<h2>Ressources supplémentaires</h2>
+<p>Ci-bas, vous trouverez des ressources et des liens relatifs aux tutoriels qui ont
+été présentés durant les deux jours.</p>
+<dl class="docutils">
+<dt><strong>Tutoriel 1 : Le Sage notebook</strong></dt>
+<dd>
+<ul class="first last simple">
+<li>Quick reference card. Deux pages qui décrivent en un coup d'oeil les
+fonctionnalités principales de Sage.</li>
+<li>Le tutoriel d'introduction officiel de Sage.</li>
+<li>La construction de base en Sage.</li>
+<li>La documentation complète.</li>
+<li>Le livre Calcul mathématique avec Sage (en français).</li>
+</ul>
+</dd>
+<dt><strong>Tutoriel 2 : Fonctions, calcul, dessin, interact, animate</strong></dt>
+<dd>
+<ul class="first last simple">
+<li>Quick reference card pour le calcul.</li>
+<li>Le tutoriel sur le calcul officiel de Sage.</li>
+<li>Une bibliothèque d'animations.</li>
+<li>Une bibliothèque d'interacts.</li>
+</ul>
+</dd>
+<dt><strong>Tutoriel 3 : Programmer en Python</strong></dt>
+<dd>
+<ul class="first last simple">
+<li>Les boucles et les itérateurs.</li>
+<li>Tutoriel sur la programmation fonctionnelle</li>
+<li>Apprendre Python en 10 minutes.</li>
+<li>Projet Euler. Ce site offre une série de problèmes de mathématiques et
+d'informatique qui exigent non seulement des réflexions mathématiques, mais
+également une bonne imagination en programmation. C'est un excellent
+exercice pour apprendre Sage et Python.</li>
+</ul>
+</dd>
+</dl>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="footer">
+<hr class="text-only">
+This site is
+generated by <a href="http://github.com/sylvainhalle/FantasticWindmill">Fantastic Windmill</a>.
+</div>
+
+</div>
+
+<!--
+You are viewing a page using the LOCAL version of the site
+-->
+
+
+</body>
+</html>

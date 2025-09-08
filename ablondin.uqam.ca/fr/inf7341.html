@@ -1,0 +1,395 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!-- MathJax  --><html>
+<head>
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+<!-- Sage Single Cell Server -->
+<script type="text/javascript" src="https://sagecell.sagemath.org/static/jquery.min.js"></script>
+<script type="text/javascript" src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script>
+<script type="text/javascript">
+    $(function () {
+    // Make the div with id 'mycell' a Sage cell
+    sagecell.makeSagecell({inputLocation:  '#mycell',
+                           template:       sagecell.templates.minimal,
+                           evalButtonText: 'Activate'});
+    // Make *any* div with class 'compute' a Sage cell
+    sagecell.makeSagecell({inputLocation: 'div.compute',
+                           evalButtonText: 'Evaluate'});
+    });
+</script>
+
+
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Structures de données - Homepage of Alexandre Blondin Massé</title>
+<link rel="stylesheet" type="text/css" media="screen" href="../css/screen.css">
+<meta name="author" content="Alexandre Blondin Massé">
+
+
+</head>
+<body>
+
+<div id="maincontainer">
+
+<div id="topsection"></div>
+
+<div id="menu">
+<ul id="navigation">
+<li><a href="https://ablondin.uqam.ca/index">Accueil</a></li>
+<li><a href="https://ablondin.uqam.ca/posts/fr/blogue">Blogue</a></li>
+<li>Recherche
+  <ul>
+    <li><a href="publications.html">Publications</a></li>
+    <li><a href="etudiants.html">Étudiants</a></li>
+    <li><a href="combinatoire.html">Combinatoire</a></li>
+    <li><a href="dictionnaires.html">Dictionnaires</a></li>
+  </ul>
+</li>
+<li>Enseignement
+  <ul>
+    <li><a href="inf1070.html">INF1070 Utilisation et administration des systèmes informatiques</a></li>
+    <li><a href="inf1130.html">INF1130 Mathématiques pour informaticiens</a></li>
+    <li><a href="inf3135.html">INF3135 Construction et maintenance de logiciels</a></li>
+    <li><a href="inf5071.html">INF5071 Infographie</a></li>
+    <li><a href="inf6120.html">INF6120 Programmation fonctionnelle et logique</a></li>
+    <li><a href="inf7341.html">INF7341 Structures de données</a></li>
+    <li><a href="inf7440.html">INF7440 Conception et analyse d'algorithmes</a></li>
+    <li><a href="inf889b.html">INF889B Algorithmes d'optimisation combinatoire</a></li>
+    <li><a href="mat1060.html">MAT1060 Mathématiques algorithmiques</a></li>
+    <li><a href="https://ablondin.uqam.ca/es/8mqg210">8MQG210 Modelado de sistemas aleatorios</a></li>
+  </ul>
+</li>
+<li>Logiciels
+  <ul>
+    <li><a href="sage.html">Sage</a></li>
+  </ul>
+</li>
+</ul>
+
+</div>
+
+<div id="contentwrapper">
+
+<div id="contentcolumn">
+
+<div class="outertube">
+<div id="rightcolumn">
+<div class="innertube">
+<div id="photo">
+</div>
+<h2>Coordonnées</h2>
+<p>
+Département d'informatique<br>
+Université du Québec à Montréal<br>
+CP 8888, Succ. Centre-ville<br>
+Montréal (Québec) H3C 3P8<br>
+Tél: 514-987-3000, #5516<br>
+Bureau: PK-4525<br>
+Courriel: blondin_masse[point]alexandre<br>
+[arobase]uqam[point]ca<br>
+</p>
+<h2>À propos</h2>
+<p>
+J'ai complété mon doctorat en mathématiques-informatique sous la supervision des professeurs <a href="http://lacim.uqam.ca/~brlek/">Srecko Brlek</a>, de l'Université du Québec à Montréal, au Canada, et de <a href="http://www.lama.univ-savoie.fr/~vuillon/">Laurent Vuillon</a>, de l'Université de Savoie, en France.
+</p>
+<p>
+Depuis le 1er août 2014, je suis professeur adjoint à l'Université du Québec à Montréal, au Canada.
+</p>
+<p>
+</p>
+<h2>Liens utiles</h2>
+<ul>
+  <li>Mon profil sur <a href="http://scholar.google.fr/citations?user=v8C9a9QAAAAJ&amp;hl=fr&amp;oi=ao">Google Scholar</a>
+</li>
+  <li>Mes dépôts <a href="https://gitlab.com/ablondin">GitLab</a>
+</li>
+  <li>Mes dépôts <a href="https://bitbucket.org/ablondin">Bitbucket</a>
+</li>
+  <li>Mes dépôts <a href="https://github.com/ablondin">Github</a>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+
+<h1 class="title">Structures de données</h1>
+<div class="document" id="structures-de-donnees">
+
+
+<p>Bienvenue sur le site du cours Structures de données - INF7341 que j'enseigne à
+l'hiver 2017</p>
+<div class="section" id="annonces">
+<h1>Annonces</h1>
+<dl class="docutils">
+<dt>26 avril 2017</dt>
+<dd>
+<ul class="first last simple">
+<li>Ajout de la solution de l'examen</li>
+</ul>
+</dd>
+<dt>18 avril 2017</dt>
+<dd>
+<ul class="first last simple">
+<li>Ajout des solutions des devoirs 2 et 3</li>
+</ul>
+</dd>
+<dt>10 avril 2017</dt>
+<dd>
+<ul class="first last simple">
+<li>Ajout de l'énoncé du devoir 4</li>
+</ul>
+</dd>
+<dt>15 mars 2017</dt>
+<dd>
+<ul class="first last simple">
+<li>Ajout de l'énoncé du devoir 3</li>
+</ul>
+</dd>
+<dt>9 mars 2017</dt>
+<dd>
+<ul class="first last simple">
+<li>Ajout de la solution du devoir 1</li>
+</ul>
+</dd>
+<dt>17 février 2017</dt>
+<dd>
+<ul class="first last simple">
+<li>Ajout de diapositives sur quelques problèmes ouverts</li>
+</ul>
+</dd>
+<dt>16 février 2017</dt>
+<dd>
+<ul class="first last simple">
+<li>Ajout de l'énoncé du devoir 2</li>
+</ul>
+</dd>
+<dt>23 janvier 2017</dt>
+<dd>
+<ul class="first last simple">
+<li>Ajout de l'énoncé du devoir 1</li>
+</ul>
+</dd>
+<dt>13 janvier 2017</dt>
+<dd>
+<ul class="first last simple">
+<li>Activation du site</li>
+</ul>
+</dd>
+</dl>
+</div>
+<div class="section" id="documents">
+<h1>Documents</h1>
+<ul class="simple">
+<li><a class="reference external" href="http://syllabus.uqam.ca/files/1486674386_2017_Hiver_INF7341.pdf">Plan de cours</a></li>
+<li><a class="reference external" href="https://ablondin.uqam.ca/files/inf7341/hiv2017/problemes-ouverts.pdf">Quelques problèmes ouverts</a></li>
+</ul>
+</div>
+<div class="section" id="devoirs-et-examen">
+<h1>Devoirs et examen</h1>
+<ul class="simple">
+<li>Devoir 1
+<a class="reference external" href="https://ablondin.uqam.ca/files/inf7341/hiv2017/devoir1.pdf">[énoncé]</a>
+<a class="reference external" href="https://ablondin.uqam.ca/files/inf7341/hiv2017/template-devoir1.tex">[template]</a>
+<a class="reference external" href="https://ablondin.uqam.ca/files/inf7341/hiv2017/solution-devoir1.pdf">[solution]</a>
+</li>
+<li>Devoir 2
+<a class="reference external" href="https://ablondin.uqam.ca/files/inf7341/hiv2017/devoir2.pdf">[énoncé]</a>
+<a class="reference external" href="https://ablondin.uqam.ca/files/inf7341/hiv2017/template-devoir2.zip">[template]</a>
+<a class="reference external" href="https://ablondin.uqam.ca/files/inf7341/hiv2017/solution-devoir2.pdf">[solution]</a>
+</li>
+<li>Devoir 3
+<a class="reference external" href="https://ablondin.uqam.ca/files/inf7341/hiv2017/devoir3.pdf">[énoncé]</a>
+<a class="reference external" href="https://ablondin.uqam.ca/files/inf7341/hiv2017/template-devoir3.tex">[template]</a>
+<a class="reference external" href="https://ablondin.uqam.ca/files/inf7341/hiv2017/solution-devoir3.pdf">[solution]</a>
+</li>
+<li>Devoir 4
+<a class="reference external" href="https://ablondin.uqam.ca/files/inf7341/hiv2017/devoir4.pdf">[énoncé]</a>
+<a class="reference external" href="https://ablondin.uqam.ca/files/inf7341/hiv2017/template-devoir4.tex">[template]</a>
+</li>
+<li>Examen
+<a class="reference external" href="https://ablondin.uqam.ca/files/inf7341/hiv2017/examen.pdf">[énoncé]</a>
+<a class="reference external" href="https://ablondin.uqam.ca/files/inf7341/hiv2017/solution-examen.pdf">[solution]</a>
+</li>
+</ul>
+</div>
+<div class="section" id="bareme">
+<h1>Barème</h1>
+<p>Voici la grille de correction utilisée pour les présentations orales du 28
+avril.</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="36%">
+<col width="49%">
+<col width="16%">
+</colgroup>
+<thead valign="bottom">
+<tr>
+<th class="head">Critère</th>
+<th class="head">Description</th>
+<th class="head">Points</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr>
+<td rowspan="3">Théorie</td>
+<td>Mise en contexte</td>
+<td>10</td>
+</tr>
+<tr>
+<td>Structure de données</td>
+<td>20</td>
+</tr>
+<tr>
+<td>Analyse des opérations</td>
+<td>10</td>
+</tr>
+<tr>
+<td rowspan="2">Implémentation</td>
+<td>Fonctionnabilité</td>
+<td>20</td>
+</tr>
+<tr>
+<td>Exemples pertinents</td>
+<td>10</td>
+</tr>
+<tr>
+<td rowspan="2">Présentation</td>
+<td>Qualité du support visuel</td>
+<td>10</td>
+</tr>
+<tr>
+<td>Qualité de la prestation</td>
+<td>20</td>
+</tr>
+<tr>
+<td colspan="2">Total</td>
+<td>100</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="echeancier">
+<h1>Échéancier</h1>
+<p>Le tableau ci-bas donne un aperçu de la matière abordée à chaque cours.</p>
+<p><strong>Remarque :</strong> Je me réserve la possibilité de modifier les sujets abordés au
+fur et à mesure que le trimestre avance, par exemple si certaines notions
+demandent plus de temps que prévu.</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="14%">
+<col width="16%">
+<col width="70%">
+</colgroup>
+<thead valign="bottom">
+<tr>
+<th class="head">Semaine</th>
+<th class="head">Date</th>
+<th class="head">Contenu</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr>
+<td>1</td>
+<td>13 janv</td>
+<td>Présentation du cours, introduction</td>
+</tr>
+<tr>
+<td>2</td>
+<td>20 janv</td>
+<td>Introduction (suite), hachage</td>
+</tr>
+<tr>
+<td>3</td>
+<td>27 janv</td>
+<td>Complexité amortie</td>
+</tr>
+<tr>
+<td>4</td>
+<td>3 fév</td>
+<td>Structures arborescentes</td>
+</tr>
+<tr>
+<td>5</td>
+<td>10 fév</td>
+<td>Structures arborescentes (suite)</td>
+</tr>
+<tr>
+<td>6</td>
+<td>17 fév</td>
+<td>Problèmes ouverts</td>
+</tr>
+<tr>
+<td>7</td>
+<td>24 fév</td>
+<td>Ensembles disjoints</td>
+</tr>
+<tr>
+<td>8</td>
+<td>3 mars</td>
+<td>Pas de cours (semaine de relâche)</td>
+</tr>
+<tr>
+<td>9</td>
+<td>10 mars</td>
+<td>Ensembles disjoints (suite),
+files à priorité</td>
+</tr>
+<tr>
+<td>10</td>
+<td>17 mars</td>
+<td>Files à priorité (suite)</td>
+</tr>
+<tr>
+<td>11</td>
+<td>24 mars</td>
+<td>Posets et treillis</td>
+</tr>
+<tr>
+<td>12</td>
+<td>31 mars</td>
+<td>Pas de cours</td>
+</tr>
+<tr>
+<td>13</td>
+<td>7 avril</td>
+<td>Itérateurs/générateurs</td>
+</tr>
+<tr>
+<td>14</td>
+<td>14 avril</td>
+<td>Pas de cours (vendredi de Pâques)</td>
+</tr>
+<tr>
+<td>15</td>
+<td>21 avril</td>
+<td>Examen</td>
+</tr>
+<tr>
+<td>16</td>
+<td>28 avril</td>
+<td>Présentations orales</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+
+<div id="footer">
+<hr class="text-only">
+This site is
+generated by <a href="http://github.com/sylvainhalle/FantasticWindmill">Fantastic Windmill</a>.
+</div>
+
+</div>
+
+<!--
+You are viewing a page using the LOCAL version of the site
+-->
+
+
+</body>
+</html>
